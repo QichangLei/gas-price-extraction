@@ -510,6 +510,8 @@ if __name__ == "__main__":
     parser.add_argument("--delay",  type=float, default=0.5, help="Delay between calls (s)")
     parser.add_argument("--analyze-only", action="store_true",
                         help="CV condition survey only, no API calls")
+    parser.add_argument("--prompt-only", action="store_true",
+                    help="Show condition + full prompt for each image, no API calls")
     args = parser.parse_args()
 
     if args.analyze_only:
@@ -534,6 +536,53 @@ if __name__ == "__main__":
             has_hint = "★" if CONDITION_HINTS.get(ImageCondition(c)) else " "
             print(f"  {has_hint} {c:<32} {n}")
         print("\n★ = condition hint will be injected into prompt")
+    elif args.prompt_only:
+        images = []
+        for ext in (".jpg", ".jpeg", ".png", ".webp"):
+            images += list(Path(args.image_dir).glob(f"*{ext}"))
+        if args.max:
+            images = images[:args.max]
+
+        out_path = Path(args.output_dir)
+        out_path.mkdir(parents=True, exist_ok=True)
+        prompt_log = out_path / "prompts.txt"
+
+        print(f"Generating prompts for {len(images)} images → {prompt_log}\n")
+        lines = []
+
+        for img in images:
+            try:
+                a = analyze_image(str(img))
+                hint = CONDITION_HINTS.get(a.condition, "")
+                user_text = "Extract all fuel prices from Image 1."
+                if hint:
+                    user_text += "\n" + hint.strip()
+
+                block = "\n".join([
+                    "=" * 70,
+                    f"IMAGE:     {img.name}",
+                    f"CONDITION: {a.condition.value}",
+                    f"STATS:     brightness={a.brightness:.0f}  contrast={a.contrast:.0f}  blur={a.blur_score:.0f}",
+                    f"NOTES:     {', '.join(a.notes) if a.notes else 'none'}",
+                    "-" * 70,
+                    "[SYSTEM PROMPT]",
+                    SYSTEM_PROMPT,
+                    "-" * 70,
+                    "[USER MESSAGE]",
+                    user_text,
+                    "=" * 70,
+                ])
+
+                print(block)
+                lines.append(block)
+
+            except Exception as e:
+                err = f"ERROR: {img.name} → {e}"
+                print(err)
+                lines.append(err)
+
+        prompt_log.write_text("\n\n".join(lines))
+        print(f"\nAll prompts saved to: {prompt_log}")
     else:
         process_batch(
             image_dir=args.image_dir,
