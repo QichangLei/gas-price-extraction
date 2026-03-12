@@ -1,0 +1,206 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 33 price(s) (sorted by confidence):
+
+1. $2.790 - reg [detected by 2 engines]
+   Raw text: '279'
+   Confidence: 99.94%
+   Engine: easy (+)
+   Position: x=315, y=267, w=103, h=92
+
+2. $2.490 - reg [detected by 6 engines]
+   Raw text: '249'
+   Confidence: 99.94%
+   Engine: paddle (+easy, tesseract)
+   Position: x=319, y=201, w=100, h=78
+
+3. $2.990 - plus
+   Raw text: '299'
+   Confidence: 99.64%
+   Engine: paddle
+   Position: x=391, y=437, w=143, h=103
+
+4. $2.490 - reg
+   Raw text: '249'
+   Confidence: 99.61%
+   Engine: paddle
+   Position: x=401, y=249, w=133, h=98
+
+5. $2.990 - plus [detected by 4 engines]
+   Raw text: '299'
+   Confidence: 99.57%
+   Engine: paddle (+tesseract)
+   Position: x=309, y=345, w=126, h=88
+
+6. $2.790 - plus
+   Raw text: '2.79'
+   Confidence: 96.07%
+   Engine: paddle
+   Position: x=392, y=340, w=146, h=106
+
+7. $2.499 - reg
+   Raw text: '2499'
+   Confidence: 95.89%
+   Engine: paddle
+   Position: x=318, y=196, w=118, h=85
+
+8. $2.790 - reg
+   Raw text: '2.79'
+   Confidence: 95.63%
+   Engine: paddle
+   Position: x=309, y=270, w=122, h=86
+
+9. $2.790 - reg
+   Raw text: '2.79'
+   Confidence: 95.47%
+   Engine: paddle
+   Position: x=311, y=271, w=116, h=84
+
+10. $2.790 - reg
+   Raw text: '2.79'
+   Confidence: 95.41%
+   Engine: paddle
+   Position: x=309, y=269, w=124, h=87
+
+11. $2.490 - reg
+   Raw text: '249'
+   Confidence: 95.00%
+   Engine: tesseract
+   Position: x=334, y=207, w=75, h=69
+
+12. $0.240 - reg
+   Raw text: '24'
+   Confidence: 94.00%
+   Engine: tesseract
+   Position: x=333, y=212, w=49, h=66
+
+13. $2.799 - reg
+   Raw text: '2.799'
+   Confidence: 87.60%
+   Engine: paddle
+   Position: x=309, y=267, w=126, h=90
+
+14. $1.273 - plus
+   Raw text: '1273'
+   Confidence: 87.00%
+   Engine: tesseract
+   Position: x=371, y=349, w=139, h=96
+
+15. $2.494 - reg
+   Raw text: '2494'
+   Confidence: 85.56%
+   Engine: easy
+   Position: x=398, y=234, w=155, h=125
+
+16. $2.799 - reg
+   Raw text: '2799'
+   Confidence: 82.52%
+   Engine: paddle
+   Position: x=310, y=268, w=125, h=90
+
+17. $2.998 - plus [detected by 2 engines]
+   Raw text: '2998'
+   Confidence: 81.32%
+   Engine: paddle (+)
+   Position: x=307, y=348, w=125, h=84
+
+18. $2.998 - plus [detected by 3 engines]
+   Raw text: '2998'
+   Confidence: 81.10%
+   Engine: easy (+)
+   Position: x=313, y=336, w=128, h=105
+
+19. $2.794 - reg
+   Raw text: '2794'
+   Confidence: 77.11%
+   Engine: easy
+   Position: x=396, y=330, w=154, h=119
+
+20. $2.990 - plus
+   Raw text: '299'
+   Confidence: 75.00%
+   Engine: tesseract
+   Position: x=329, y=357, w=77, h=70
+
+21. $1.273 - reg
+   Raw text: '1273'
+   Confidence: 73.00%
+   Engine: tesseract
+   Position: x=298, y=279, w=110, h=77
+
+22. $2.491 - reg [detected by 3 engines]
+   Raw text: '2491'
+   Confidence: 65.41%
+   Engine: easy (+)
+   Position: x=315, y=190, w=109, h=98
+
+23. $1.275 - reg
+   Raw text: '1275'
+   Confidence: 63.00%
+   Engine: tesseract
+   Position: x=297, y=271, w=130, h=85
+
+24. $2.994 - plus
+   Raw text: '2994'
+   Confidence: 62.79%
+   Engine: easy
+   Position: x=392, y=424, w=157, h=125
+
+25. $2.794 - reg
+   Raw text: '2794'
+   Confidence: 62.18%
+   Engine: easy
+   Position: x=316, y=264, w=123, h=94
+
+26. $2.494 - reg
+   Raw text: '2494'
+   Confidence: 48.81%
+   Engine: easy
+   Position: x=316, y=187, w=126, h=100
+
+27. $2.990 - plus
+   Raw text: '299'
+   Confidence: 47.00%
+   Engine: tesseract
+   Position: x=411, y=445, w=97, h=90
+
+28. $2.791 - reg [detected by 2 engines]
+   Raw text: '2791'
+   Confidence: 43.83%
+   Engine: easy (+)
+   Position: x=316, y=267, w=104, h=91
+
+29. $2.008 - plus
+   Raw text: '2008'
+   Confidence: 42.00%
+   Engine: tesseract
+   Position: x=341, y=341, w=87, h=130
+
+30. $2.991 - plus
+   Raw text: '2991'
+   Confidence: 33.76%
+   Engine: easy
+   Position: x=310, y=339, w=113, h=104
+
+31. $2.993 - plus
+   Raw text: '2993'
+   Confidence: 31.71%
+   Engine: easy
+   Position: x=312, y=337, w=131, h=105
+
+32. $1.550 - plus
+   Raw text: 'less'
+   Confidence: 29.00%
+   Engine: tesseract
+   Position: x=238, y=356, w=169, h=82
+
+33. $0.990 - plus
+   Raw text: '99'
+   Confidence: 11.00%
+   Engine: tesseract
+   Position: x=359, y=343, w=69, h=75
+
+
+============================================================

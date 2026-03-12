@@ -1,0 +1,2 @@
+total_gt_entries,correct_matches,close_matches_5cent,wrong_price,missed,extra_hallucinated,precision@0.01,recall@0.01,F1@0.01,MAE_dollars,RMSE_dollars,max_error_dollars
+1235,51,0,0,1184,0,1.0,0.0413,0.0793,0.0002,0.0013,0.009

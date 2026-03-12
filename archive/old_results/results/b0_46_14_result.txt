@@ -1,0 +1,212 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 34 price(s) (sorted by confidence):
+
+1. $2.550 - (qnunleaded [detected by 8 engines]
+   Raw text: '255'
+   Confidence: 100.00%
+   Engine: easy (+paddle, tesseract)
+   Position: x=237, y=153, w=143, h=67
+
+2. $2.659 - plus [detected by 2 engines]
+   Raw text: '2659'
+   Confidence: 100.00%
+   Engine: easy (+)
+   Position: x=236, y=224, w=165, h=71
+
+3. $0.150 - premium unleaded
+   Raw text: 'Plus'
+   Confidence: 100.00%
+   Engine: easy
+   Position: x=420, y=272, w=46, h=26
+
+4. $2.559 - (qnunleaded [detected by 4 engines]
+   Raw text: '2559'
+   Confidence: 99.99%
+   Engine: easy (+)
+   Position: x=237, y=153, w=167, h=68
+
+5. $2.650 - premium unleaded
+   Raw text: '265'
+   Confidence: 99.99%
+   Engine: easy
+   Position: x=295, y=280, w=177, h=88
+
+6. $2.650 - plus [detected by 4 engines]
+   Raw text: '265'
+   Confidence: 99.99%
+   Engine: easy (+paddle)
+   Position: x=236, y=223, w=145, h=73
+
+7. $0.510 - diesel [detected by 3 engines]
+   Raw text: 'Diesel'
+   Confidence: 99.99%
+   Engine: easy (+paddle, tesseract)
+   Position: x=357, y=443, w=62, h=32
+
+8. $0.510 - diesel [detected by 10 engines]
+   Raw text: 'Diesel'
+   Confidence: 99.99%
+   Engine: easy (+paddle)
+   Position: x=287, y=355, w=50, h=27
+
+9. $2.820 - diesel [detected by 2 engines]
+   Raw text: '282'
+   Confidence: 99.98%
+   Engine: easy (+paddle)
+   Position: x=295, y=456, w=166, h=89
+
+10. $2.550 - unleaded plus [detected by 2 engines]
+   Raw text: '255'
+   Confidence: 99.95%
+   Engine: paddle (+tesseract)
+   Position: x=304, y=199, w=162, h=67
+
+11. $0.150 - plus [detected by 4 engines]
+   Raw text: 'Plus'
+   Confidence: 99.91%
+   Engine: easy (+)
+   Position: x=332, y=214, w=42, h=26
+
+12. $1.150 - unleaded plus [detected by 5 engines]
+   Raw text: 'Unleaded Plus'
+   Confidence: 99.90%
+   Engine: easy (+paddle)
+   Position: x=260, y=208, w=115, h=32
+
+13. $2.950 - unleaded [detected by 9 engines]
+   Raw text: '295'
+   Confidence: 99.83%
+   Engine: paddle (+easy)
+   Position: x=242, y=301, w=124, h=60
+
+14. $2.650 - premium unleaded
+   Raw text: '265'
+   Confidence: 99.82%
+   Engine: paddle
+   Position: x=305, y=291, w=157, h=66
+
+15. $2.950 - diesel
+   Raw text: '295'
+   Confidence: 99.80%
+   Engine: paddle
+   Position: x=303, y=378, w=154, h=72
+
+16. $2.820 - diesel [detected by 9 engines]
+   Raw text: '282'
+   Confidence: 99.78%
+   Engine: paddle (+easy)
+   Position: x=237, y=367, w=131, h=69
+
+17. $2.650 - plus [detected by 3 engines]
+   Raw text: '265'
+   Confidence: 99.66%
+   Engine: paddle (+)
+   Position: x=242, y=232, w=132, h=54
+
+18. $1.150 - unleaded plus
+   Raw text: 'Unleaded Plus'
+   Confidence: 96.81%
+   Engine: paddle
+   Position: x=261, y=211, w=111, h=27
+
+19. $1.150 - unleaded
+   Raw text: 'Unleaded Plus'
+   Confidence: 96.55%
+   Engine: paddle
+   Position: x=328, y=263, w=136, h=35
+
+20. $0.260 - unleaded
+   Raw text: '26'
+   Confidence: 95.00%
+   Engine: tesseract
+   Position: x=246, y=236, w=77, h=43
+
+21. $2.959 - unleaded [detected by 5 engines]
+   Raw text: '2959'
+   Confidence: 92.83%
+   Engine: easy (+tesseract)
+   Position: x=233, y=292, w=167, h=82
+
+22. $0.590 - unleaded
+   Raw text: '59'
+   Confidence: 92.00%
+   Engine: tesseract
+   Position: x=410, y=304, w=78, h=50
+
+23. $2.959 - diesel
+   Raw text: '2959'
+   Confidence: 92.00%
+   Engine: tesseract
+   Position: x=306, y=382, w=178, h=64
+
+24. $2.821 - diesel
+   Raw text: '2821'
+   Confidence: 79.34%
+   Engine: easy
+   Position: x=238, y=370, w=125, h=61
+
+25. $2.652 - plus [detected by 2 engines]
+   Raw text: '2652'
+   Confidence: 78.00%
+   Engine: tesseract (+)
+   Position: x=246, y=235, w=144, h=48
+
+26. $0.110 - premium unleaded [detected by 2 engines]
+   Raw text: 'Unlleaded '
+   Confidence: 71.73%
+   Engine: easy (+)
+   Position: x=309, y=284, w=69, h=32
+
+27. $2.559 - unleaded plus
+   Raw text: '2559'
+   Confidence: 62.77%
+   Engine: easy
+   Position: x=296, y=190, w=209, h=89
+
+28. $8.290 - diesel
+   Raw text: 'B29'
+   Confidence: 59.00%
+   Engine: tesseract
+   Position: x=291, y=384, w=92, h=52
+
+29. $2.850 - diesel
+   Raw text: '285'
+   Confidence: 52.67%
+   Engine: easy
+   Position: x=292, y=366, w=174, h=95
+
+30. $1.285 - plus
+   Raw text: '1285'
+   Confidence: 47.45%
+   Engine: easy
+   Position: x=236, y=227, w=141, h=65
+
+31. $0.500 - Unknown (Group 2)
+   Raw text: 'So'
+   Confidence: 40.00%
+   Engine: tesseract
+   Position: x=351, y=506, w=36, h=19
+
+32. $8.280 - diesel
+   Raw text: 'B28'
+   Confidence: 39.00%
+   Engine: tesseract
+   Position: x=291, y=384, w=92, h=52
+
+33. $2.650 - diesel
+   Raw text: '265g'
+   Confidence: 34.00%
+   Engine: tesseract
+   Position: x=241, y=365, w=143, h=66
+
+34. $0.550 - Unknown (Group 1)
+   Raw text: 'SS'
+   Confidence: 30.00%
+   Engine: tesseract
+   Position: x=217, y=30, w=20, h=15
+
+
+============================================================

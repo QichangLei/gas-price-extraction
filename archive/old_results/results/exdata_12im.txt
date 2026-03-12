@@ -1,0 +1,87 @@
+============================================================
+BATCH PROCESSING SUMMARY
+============================================================
+
+Total images: 12
+Successful: 12 ✓
+Failed: 0 ✗
+Success rate: 100.0%
+
+------------------------------------------------------------
+RESULTS BY IMAGE:
+------------------------------------------------------------
+
+✓ b0_46_10.png: 37 price(s) found
+  1. $2.490 - plus (99.8%)
+  2. $2.890 - Unknown (Group 1) (99.7%)
+  3. $0.150 - Unknown (Group 1) (99.5%)
+  ... and 34 more
+
+✓ b0_46_11.png: 32 price(s) found
+  1. $4.098 - Unknown (Group 1) (99.5%)
+  2. $0.110 - regular (99.3%)
+  3. $4.090 - Unknown (Group 3) (98.6%)
+  ... and 29 more
+
+✓ b0_46_13.png: 26 price(s) found
+  1. $3.050 - super (100.0%)
+  2. $2.950 - yplus (100.0%)
+  3. $2.959 - yplus (100.0%)
+  ... and 23 more
+
+✓ b0_46_14.png: 34 price(s) found
+  1. $2.550 - (qnunleaded (100.0%)
+  2. $2.659 - plus (100.0%)
+  3. $0.150 - premium unleaded (100.0%)
+  ... and 31 more
+
+✓ b0_46_15.png: 34 price(s) found
+  1. $2.820 - diesel (99.8%)
+  2. $2.820 - diesel (99.7%)
+  3. $0.260 - regular (99.5%)
+  ... and 31 more
+
+✓ b0_46_16.png: 49 price(s) found
+  1. $0.150 - premm (99.6%)
+  2. $5.000 - Unknown (Group 1) (98.8%)
+  3. $5.000 - Unknown (Group 1) (98.8%)
+  ... and 46 more
+
+✓ b0_46_2.png: 33 price(s) found
+  1. $2.790 - reg (99.9%)
+  2. $2.490 - reg (99.9%)
+  3. $2.990 - plus (99.6%)
+  ... and 30 more
+
+✓ b0_46_3.png: 64 price(s) found
+  1. $5.220 - regular (99.9%)
+  2. $0.150 - diesel (99.6%)
+  3. $0.150 - diesel (99.3%)
+  ... and 61 more
+
+✓ b0_46_4.png: 38 price(s) found
+  1. $2.999 - plus (99.8%)
+  2. $2.950 - reguar (99.8%)
+  3. $0.150 - diesel (99.7%)
+  ... and 35 more
+
+✓ b0_46_6.png: 37 price(s) found
+  1. $2.999 - Unknown (Group 2) (99.8%)
+  2. $2.959 - Unknown (Group 1) (99.7%)
+  3. $2.999 - Unknown (Group 2) (99.7%)
+  ... and 34 more
+
+✓ b0_46_8.png: 30 price(s) found
+  1. $2.898 - supet + (97.0%)
+  2. $2.598 - Unknown (Group 1) (96.4%)
+  3. $2.898 - Unknown (Group 1) (96.0%)
+  ... and 27 more
+
+✓ b0_46_9.png: 21 price(s) found
+  1. $2.650 - reg (99.3%)
+  2. $2.990 - reg (99.0%)
+  3. $4.592 - reg (95.2%)
+  ... and 18 more
+
+============================================================
+

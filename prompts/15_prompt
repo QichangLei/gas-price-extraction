@@ -1,0 +1,13 @@
+```markdown
+Prompt
+Extract all visible fuel prices and their types from this gas station sign image. 
+For each price found, provide:
+- Fuel type (Regular, Midgrade, Premium, Diesel, etc.)
+- Price in dollars
+- Your confidence level
+
+Format the output as:
+Fuel Type: [type]
+Price: $[price]
+Output file as txt and csv format
+```

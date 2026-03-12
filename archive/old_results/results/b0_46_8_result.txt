@@ -1,0 +1,188 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 30 price(s) (sorted by confidence):
+
+1. $2.898 - supet + [detected by 7 engines]
+   Raw text: '2.898'
+   Confidence: 97.03%
+   Engine: paddle (+tesseract)
+   Position: x=314, y=334, w=59, h=25
+
+2. $2.598 - Unknown (Group 1) [detected by 3 engines]
+   Raw text: '2.598'
+   Confidence: 96.45%
+   Engine: paddle (+)
+   Position: x=315, y=276, w=55, h=22
+
+3. $2.898 - Unknown (Group 1)
+   Raw text: '2.898'
+   Confidence: 96.01%
+   Engine: paddle
+   Position: x=397, y=422, w=67, h=26
+
+4. $2.798 - supet +
+   Raw text: '2.798'
+   Confidence: 95.63%
+   Engine: paddle
+   Position: x=396, y=385, w=67, h=26
+
+5. $2.798 - supet + [detected by 3 engines]
+   Raw text: '2.798'
+   Confidence: 93.33%
+   Engine: paddle (+easy)
+   Position: x=316, y=307, w=56, h=22
+
+6. $2.790 - supet +
+   Raw text: '2.79a'
+   Confidence: 85.62%
+   Engine: paddle
+   Position: x=315, y=305, w=58, h=25
+
+7. $6.520 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: 'g652'
+   Confidence: 80.95%
+   Engine: paddle (+)
+   Position: x=312, y=275, w=61, h=25
+
+8. $8.620 - supet + [detected by 2 engines]
+   Raw text: '86L2'
+   Confidence: 79.39%
+   Engine: paddle (+)
+   Position: x=315, y=307, w=57, h=22
+
+9. $6.520 - supet +
+   Raw text: 'g652'
+   Confidence: 78.48%
+   Engine: paddle
+   Position: x=395, y=346, w=69, h=29
+
+10. $2.093 - supet +
+   Raw text: '2093'
+   Confidence: 76.72%
+   Engine: easy
+   Position: x=314, y=334, w=58, h=26
+
+11. $2.890 - Unknown (Group 1)
+   Raw text: '2.89'
+   Confidence: 71.00%
+   Engine: tesseract
+   Position: x=400, y=419, w=45, h=39
+
+12. $2.793 - supet + [detected by 3 engines]
+   Raw text: '2 793'
+   Confidence: 69.14%
+   Engine: easy (+)
+   Position: x=312, y=306, w=62, h=26
+
+13. $2.593 - supet +
+   Raw text: '2593'
+   Confidence: 67.38%
+   Engine: easy
+   Position: x=394, y=346, w=72, h=32
+
+14. $2.590 - Unknown (Group 1)
+   Raw text: '2590'
+   Confidence: 66.02%
+   Engine: easy
+   Position: x=314, y=276, w=58, h=24
+
+15. $2.790 - supet +
+   Raw text: '279'
+   Confidence: 65.59%
+   Engine: easy
+   Position: x=392, y=379, w=75, h=38
+
+16. $0.290 - supet +
+   Raw text: '29'
+   Confidence: 62.00%
+   Engine: tesseract
+   Position: x=319, y=310, w=37, h=18
+
+17. $0.250 - Unknown (Group 1)
+   Raw text: '25g'
+   Confidence: 47.07%
+   Engine: easy
+   Position: x=312, y=274, w=64, h=30
+
+18. $3.100 - Unknown (Group 1)
+   Raw text: '310'
+   Confidence: 47.00%
+   Engine: tesseract
+   Position: x=332, y=281, w=38, h=28
+
+19. $2.980 - supet +
+   Raw text: '2p98'
+   Confidence: 42.14%
+   Engine: easy
+   Position: x=314, y=334, w=62, h=30
+
+20. $2.098 - supet + [detected by 3 engines]
+   Raw text: '2098'
+   Confidence: 38.48%
+   Engine: easy (+)
+   Position: x=316, y=336, w=56, h=24
+
+21. $2.530 - Unknown (Group 1)
+   Raw text: '25g3'
+   Confidence: 32.40%
+   Engine: easy
+   Position: x=314, y=276, w=58, h=26
+
+22. $2.500 - Unknown (Group 1)
+   Raw text: '25g0'
+   Confidence: 26.62%
+   Engine: easy
+   Position: x=314, y=276, w=58, h=24
+
+23. $0.500 - Unknown (Group 1)
+   Raw text: 'soe'
+   Confidence: 26.00%
+   Engine: tesseract
+   Position: x=246, y=438, w=19, h=14
+
+24. $5.600 - Unknown (Group 1)
+   Raw text: 'S600'
+   Confidence: 24.00%
+   Engine: tesseract
+   Position: x=290, y=281, w=33, h=28
+
+25. $2.190 - supet +
+   Raw text: '219k'
+   Confidence: 24.00%
+   Engine: tesseract
+   Position: x=319, y=310, w=49, h=18
+
+26. $4.730 - supet +
+   Raw text: '473'
+   Confidence: 23.00%
+   Engine: tesseract
+   Position: x=97, y=325, w=52, h=20
+
+27. $2.591 - Unknown (Group 1)
+   Raw text: '2591'
+   Confidence: 17.66%
+   Engine: easy
+   Position: x=314, y=276, w=58, h=24
+
+28. $7.930 - supet +
+   Raw text: ''793'
+   Confidence: 14.81%
+   Engine: easy
+   Position: x=330, y=306, w=42, h=24
+
+29. $2.893 - Unknown (Group 1)
+   Raw text: '2893]'
+   Confidence: 12.72%
+   Engine: easy
+   Position: x=396, y=420, w=72, h=32
+
+30. $0.510 - supet +
+   Raw text: 'sl'
+   Confidence: 3.00%
+   Engine: tesseract
+   Position: x=576, y=287, w=22, h=25
+
+
+============================================================

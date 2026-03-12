@@ -1,0 +1,52 @@
+	Image_Number,Fuel_Type,Price,Gas_Station_Brand,Payment_Type,Confidence,Latitude,Longitude,Captured_At,Source_File
+0,UNLEADED,3.359,Fred Meyer,NA,92,NA,NA,NA,NA
+0,MID-GRADE,3.559,Fred Meyer,NA,92,NA,NA,NA,NA
+0,PREMIUM,3.659,Fred Meyer,NA,92,NA,NA,NA,NA
+0,DIESEL,3.639,Fred Meyer,NA,92,NA,NA,NA,NA
+1,Regular,3.499,Chevron,Cash,94,,,,0.png
+1,Plus,3.659,Chevron,Cash,94,,,,0.png
+1,Supreme,3.799,Chevron,Cash,94,,,,0.png
+1,Diesel,3.999,Chevron,NA,94,,,,0.png
+2,Regular,2.599,Shell,NA,95,,,,1.png
+2,Diesel,2.799,Shell,NA,95,,,,1.png
+3,Regular,3.559,NA,Cash/Card,92,,,,2.png
+3,Regular,3.659,NA,Credit/Debit,92,,,,2.png
+3,Plus,3.799,NA,Cash/Card,92,,,,2.png
+3,Plus,3.899,NA,Credit/Debit,92,,,,2.png
+3,Premium,3.959,NA,Cash/Card,92,,,,2.png
+3,Premium,4.059,NA,Credit/Debit,92,,,,2.png
+4,Regular Gasoline,3.279,Shell,NA,95,,,,3.png
+4,Plus Gasoline,3.479,Shell,NA,95,,,,3.png
+4,V-Power Gasoline,3.579,Shell,NA,95,,,,3.png
+4,Diesel #2,3.679,Shell,NA,95,,,,3.png
+5,Regular,3.399,Exxon,NA,95,,,,4.png
+5,Extra,3.499,Exxon,NA,95,,,,4.png
+5,Supreme,3.799,Exxon,NA,95,,,,4.png
+6,Regular,2.899,Shell,NA,95,,,,5.png
+6,Diesel,3.159,Shell,NA,95,,,,5.png
+7,Regular,2.799,Shell,NA,95,,,,6.png
+7,Plus,3.299,Shell,NA,95,,,,6.png
+7,V-Power,3.399,Shell,NA,95,,,,6.png
+7,Diesel,3.099,Shell,NA,95,,,,6.png
+8,Regular,3.399,Exxon,NA,95,,,,7.png
+8,Extra,3.499,Exxon,NA,95,,,,7.png
+8,Supreme,3.799,Exxon,NA,95,,,,7.png
+9,Regular Self,2.959,Sunoco,NA,94,,,,8.png
+9,Ultra 93 Self,3.559,Sunoco,NA,94,,,,8.png
+10,Regular Self,2.799,Sunoco,NA,90,,,,9.png
+10,Ultra 93 Self,3.399,Sunoco,NA,90,,,,9.png
+11,Reg Self,2.799,Sunoco,NA,95,,,,10.png
+11,Ultra 93 Self,3.399,Sunoco,NA,95,,,,10.png
+12,Regular,2.629,Shell,NA,95,,,,11.png
+12,Diesel,2.799,Shell,NA,95,,,,11.png
+13,Regular,2.039,Exxon,NA,95,,,,12.png
+14,Regular,2.039,Exxon,NA,95,,,,13.png
+16,Regular CASH,3.279,NA,Cash,92,,,,15.png
+16,Diesel CASH,3.449,NA,Cash,92,,,,15.png
+17,REGULAR,2.499,Gran Prix,NA,95,,,,16.png
+18,REGULAR UNLEADED,2.179,CITGO,NA,96,,,,17.png
+19,REGULAR UNLEADED,2.179,CITGO,NA,95,,,,18.png
+20,Regular,2.739,Shell,NA,94,,,,19.png
+20,Diesel,2.999,Shell,NA,94,,,,19.png
+21,REG,2.659,Speedway,NA,95,,,,20.png
+21,PREM,3.059,Speedway,NA,95,,,,20.png

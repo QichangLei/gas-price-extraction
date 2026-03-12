@@ -1,0 +1,302 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 49 price(s) (sorted by confidence):
+
+1. $0.150 - premm
+   Raw text: 'DIESEL'
+   Confidence: 99.56%
+   Engine: paddle
+   Position: x=379, y=445, w=49, h=14
+
+2. $5.000 - Unknown (Group 1) [detected by 7 engines]
+   Raw text: 'SUNOCO'
+   Confidence: 98.82%
+   Engine: paddle (+easy)
+   Position: x=282, y=102, w=81, h=21
+
+3. $5.000 - Unknown (Group 1)
+   Raw text: 'SUNOCO'
+   Confidence: 98.76%
+   Engine: paddle
+   Position: x=353, y=127, w=101, h=25
+
+4. $0.150 - diesel [detected by 2 engines]
+   Raw text: 'DIESEL'
+   Confidence: 98.15%
+   Engine: paddle (+)
+   Position: x=306, y=358, w=32, h=7
+
+5. $2.930 - diesel
+   Raw text: '293'
+   Confidence: 95.61%
+   Engine: paddle
+   Position: x=298, y=369, w=47, h=19
+
+6. $0.660 - plus
+   Raw text: '66'
+   Confidence: 95.17%
+   Engine: paddle
+   Position: x=388, y=272, w=38, h=24
+
+7. $1.998 - regular [detected by 2 engines]
+   Raw text: '1998'
+   Confidence: 93.63%
+   Engine: paddle (+)
+   Position: x=306, y=217, w=39, h=23
+
+8. $2.938 - diesel
+   Raw text: '2.938'
+   Confidence: 88.73%
+   Engine: paddle
+   Position: x=367, y=458, w=68, h=33
+
+9. $2.250 - regulaf
+   Raw text: '2.250'
+   Confidence: 88.07%
+   Engine: paddle
+   Position: x=294, y=253, w=56, h=26
+
+10. $2.898 - premm
+   Raw text: '2.898'
+   Confidence: 87.01%
+   Engine: paddle
+   Position: x=368, y=411, w=67, h=30
+
+11. $2.898 - premium
+   Raw text: '2898'
+   Confidence: 86.95%
+   Engine: paddle
+   Position: x=293, y=327, w=61, h=29
+
+12. $1.259 - plus
+   Raw text: '1259'
+   Confidence: 85.55%
+   Engine: easy
+   Position: x=290, y=288, w=62, h=30
+
+13. $2.290 - regulaf
+   Raw text: '229'
+   Confidence: 85.05%
+   Engine: easy
+   Position: x=292, y=252, w=60, h=30
+
+14. $2.598 - plus [detected by 2 engines]
+   Raw text: '2.598.'
+   Confidence: 84.81%
+   Engine: paddle (+)
+   Position: x=294, y=290, w=57, h=26
+
+15. $2.250 - premium
+   Raw text: '2.250'
+   Confidence: 83.83%
+   Engine: paddle
+   Position: x=366, y=317, w=68, h=30
+
+16. $2.938 - diesel [detected by 2 engines]
+   Raw text: '2.938'
+   Confidence: 82.77%
+   Engine: paddle (+)
+   Position: x=295, y=367, w=55, h=26
+
+17. $8.652 - plus
+   Raw text: '8652'
+   Confidence: 81.41%
+   Engine: paddle
+   Position: x=294, y=290, w=57, h=25
+
+18. $2.890 - premium
+   Raw text: '289'
+   Confidence: 80.65%
+   Engine: paddle
+   Position: x=292, y=327, w=62, h=30
+
+19. $1.990 - regular
+   Raw text: '199A'
+   Confidence: 79.88%
+   Engine: paddle
+   Position: x=305, y=215, w=46, h=28
+
+20. $12.598 - diesel
+   Raw text: '12.598'
+   Confidence: 79.70%
+   Engine: paddle
+   Position: x=365, y=362, w=69, h=29
+
+21. $8.620 - diesel
+   Raw text: '8E62'
+   Confidence: 74.59%
+   Engine: paddle
+   Position: x=296, y=368, w=52, h=23
+
+22. $0.550 - premm
+   Raw text: 'Foamssit'
+   Confidence: 69.82%
+   Engine: paddle
+   Position: x=301, y=417, w=42, h=10
+
+23. $6.682 - premium
+   Raw text: '6682'
+   Confidence: 66.06%
+   Engine: paddle
+   Position: x=291, y=326, w=62, h=29
+
+24. $1.998 - plus
+   Raw text: '1998'
+   Confidence: 62.54%
+   Engine: easy
+   Position: x=374, y=270, w=62, h=32
+
+25. $5.010 - Unknown (Group 2)
+   Raw text: 'SATOMATIC'
+   Confidence: 61.62%
+   Engine: paddle
+   Position: x=331, y=175, w=40, h=11
+
+26. $2.598 - diesel
+   Raw text: '2598'
+   Confidence: 56.14%
+   Engine: easy
+   Position: x=367, y=361, w=72, h=36
+
+27. $0.980 - diesel
+   Raw text: '98'
+   Confidence: 51.16%
+   Engine: easy
+   Position: x=308, y=366, w=42, h=26
+
+28. $0.500 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: 'GSUNOCD'
+   Confidence: 45.84%
+   Engine: easy (+)
+   Position: x=279, y=103, w=86, h=20
+
+29. $0.910 - premium
+   Raw text: 'P091'
+   Confidence: 45.55%
+   Engine: easy
+   Position: x=296, y=328, w=52, h=24
+
+30. $2.590 - plus
+   Raw text: '25q9'
+   Confidence: 43.53%
+   Engine: easy
+   Position: x=294, y=290, w=56, h=24
+
+31. $9.990 - regular
+   Raw text: '999'
+   Confidence: 43.07%
+   Engine: easy
+   Position: x=307, y=217, w=40, h=20
+
+32. $2.931 - diesel [detected by 2 engines]
+   Raw text: '2931'
+   Confidence: 40.45%
+   Engine: easy (+)
+   Position: x=294, y=366, w=58, h=28
+
+33. $0.931 - diesel
+   Raw text: '0931'
+   Confidence: 34.59%
+   Engine: easy
+   Position: x=294, y=366, w=58, h=30
+
+34. $1.500 - premium
+   Raw text: 'Istop'
+   Confidence: 32.98%
+   Engine: easy
+   Position: x=196, y=324, w=24, h=24
+
+35. $0.220 - regulaf
+   Raw text: '22g'
+   Confidence: 32.90%
+   Engine: easy
+   Position: x=292, y=252, w=60, h=30
+
+36. $1.500 - premm
+   Raw text: 'IStop'
+   Confidence: 27.59%
+   Engine: easy
+   Position: x=246, y=406, w=32, h=28
+
+37. $2.931 - diesel
+   Raw text: '2931'
+   Confidence: 25.30%
+   Engine: easy
+   Position: x=369, y=457, w=70, h=36
+
+38. $5.180 - plus
+   Raw text: '518'
+   Confidence: 23.09%
+   Engine: easy
+   Position: x=308, y=290, w=40, h=26
+
+39. $0.280 - premium
+   Raw text: '2G8'
+   Confidence: 21.41%
+   Engine: easy
+   Position: x=386, y=318, w=52, h=32
+
+40. $0.150 - plus
+   Raw text: 'plUS'
+   Confidence: 16.96%
+   Engine: easy
+   Position: x=309, y=281, w=28, h=12
+
+41. $0.580 - regulaf
+   Raw text: '058'
+   Confidence: 16.25%
+   Engine: easy
+   Position: x=308, y=254, w=40, h=24
+
+42. $1.254 - plus
+   Raw text: '12541'
+   Confidence: 14.33%
+   Engine: easy
+   Position: x=290, y=288, w=64, h=32
+
+43. $0.550 - plus
+   Raw text: 'Ss'
+   Confidence: 12.00%
+   Engine: tesseract
+   Position: x=22, y=268, w=64, h=33
+
+44. $9.910 - regular
+   Raw text: '991'
+   Confidence: 11.24%
+   Engine: easy
+   Position: x=306, y=216, w=42, h=24
+
+45. $0.110 - regulaa
+   Raw text: 'RI-GWIAF'
+   Confidence: 9.73%
+   Engine: easy
+   Position: x=300, y=246, w=44, h=8
+
+46. $0.550 - diesel
+   Raw text: 'DissL'
+   Confidence: 7.69%
+   Engine: easy
+   Position: x=381, y=447, w=44, h=14
+
+47. $0.990 - regular
+   Raw text: 'J99i'
+   Confidence: 5.19%
+   Engine: easy
+   Position: x=296, y=214, w=52, h=28
+
+48. $0.210 - premium
+   Raw text: '2bAI'
+   Confidence: 3.62%
+   Engine: easy
+   Position: x=292, y=328, w=60, h=30
+
+49. $0.280 - premm
+   Raw text: '28qa'
+   Confidence: 1.53%
+   Engine: easy
+   Position: x=367, y=409, w=74, h=38
+
+
+============================================================

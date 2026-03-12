@@ -1,0 +1,236 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 38 price(s) (sorted by confidence):
+
+1. $2.999 - plus [detected by 6 engines]
+   Raw text: '2999'
+   Confidence: 99.85%
+   Engine: easy (+paddle)
+   Position: x=360, y=333, w=86, h=51
+
+2. $2.950 - reguar
+   Raw text: '295'
+   Confidence: 99.77%
+   Engine: easy
+   Position: x=363, y=259, w=70, h=44
+
+3. $0.150 - diesel [detected by 6 engines]
+   Raw text: 'DIESEL'
+   Confidence: 99.74%
+   Engine: paddle (+easy)
+   Position: x=344, y=320, w=37, h=17
+
+4. $0.150 - diesel
+   Raw text: 'DIESEL'
+   Confidence: 99.69%
+   Engine: paddle
+   Position: x=430, y=400, w=46, h=21
+
+5. $2.959 - regular [detected by 6 engines]
+   Raw text: '2959'
+   Confidence: 99.69%
+   Engine: easy (+paddle)
+   Position: x=360, y=253, w=88, h=52
+
+6. $0.550 - plus [detected by 4 engines]
+   Raw text: 'GOMASDEUSO'
+   Confidence: 99.58%
+   Engine: paddle (+easy)
+   Position: x=402, y=452, w=75, h=16
+
+7. $2.959 - diesel [detected by 2 engines]
+   Raw text: '2.959'
+   Confidence: 99.55%
+   Engine: paddle (+easy)
+   Position: x=456, y=320, w=100, h=58
+
+8. $2.459 - plus
+   Raw text: '2.459'
+   Confidence: 99.42%
+   Engine: paddle
+   Position: x=310, y=340, w=88, h=52
+
+9. $6.562 - regular [detected by 2 engines]
+   Raw text: '6562'
+   Confidence: 99.09%
+   Engine: paddle (+)
+   Position: x=363, y=256, w=83, h=46
+
+10. $6.662 - plus [detected by 4 engines]
+   Raw text: '6662'
+   Confidence: 99.00%
+   Engine: paddle (+)
+   Position: x=363, y=336, w=82, h=46
+
+11. $5.620 - reguar
+   Raw text: '562'
+   Confidence: 98.98%
+   Engine: paddle
+   Position: x=365, y=258, w=74, h=44
+
+12. $2.759 - plus
+   Raw text: '2.759'
+   Confidence: 98.35%
+   Engine: paddle
+   Position: x=310, y=437, w=83, h=44
+
+13. $6.662 - plus
+   Raw text: '6662'
+   Confidence: 98.15%
+   Engine: paddle
+   Position: x=454, y=420, w=103, h=58
+
+14. $2.459 - reguar [detected by 4 engines]
+   Raw text: '2459'
+   Confidence: 97.76%
+   Engine: easy (+)
+   Position: x=242, y=267, w=80, h=51
+
+15. $0.550 - Unknown (Group 5) [detected by 2 engines]
+   Raw text: 'GOMAS DEUSO'
+   Confidence: 97.24%
+   Engine: paddle (+easy)
+   Position: x=501, y=564, w=98, h=24
+
+16. $2.759 - plus [detected by 5 engines]
+   Raw text: '2.759'
+   Confidence: 97.15%
+   Engine: paddle (+easy)
+   Position: x=246, y=347, w=70, h=40
+
+17. $2.459 - plus
+   Raw text: '2459'
+   Confidence: 97.03%
+   Engine: easy
+   Position: x=306, y=336, w=95, h=58
+
+18. $6.520 - reguar [detected by 4 engines]
+   Raw text: '65h2'
+   Confidence: 97.00%
+   Engine: paddle (+)
+   Position: x=246, y=271, w=75, h=44
+
+19. $0.550 - plus [detected by 3 engines]
+   Raw text: 'GOMAS DEUSO'
+   Confidence: 96.96%
+   Engine: paddle (+)
+   Position: x=401, y=450, w=77, h=20
+
+20. $5.250 - Unknown (Group 5)
+   Raw text: 'Desde:$25'
+   Confidence: 95.86%
+   Engine: paddle
+   Position: x=499, y=583, w=85, h=22
+
+21. $5.250 - Unknown (Group 3) [detected by 3 engines]
+   Raw text: 'Desde:25'
+   Confidence: 93.17%
+   Engine: paddle (+)
+   Position: x=401, y=469, w=75, h=14
+
+22. $6.520 - plus [detected by 2 engines]
+   Raw text: '65L2'
+   Confidence: 90.22%
+   Engine: paddle (+)
+   Position: x=245, y=346, w=73, h=43
+
+23. $5.535 - Unknown (Group 3)
+   Raw text: 'Desders35'
+   Confidence: 81.00%
+   Engine: paddle
+   Position: x=401, y=469, w=69, h=14
+
+24. $65.200 - plus
+   Raw text: '65.2'
+   Confidence: 77.78%
+   Engine: paddle
+   Position: x=245, y=345, w=74, h=43
+
+25. $6.520 - reguar
+   Raw text: '65h'2'
+   Confidence: 75.87%
+   Engine: paddle
+   Position: x=244, y=268, w=78, h=49
+
+26. $1.690 - plus
+   Raw text: '169'
+   Confidence: 74.00%
+   Engine: tesseract
+   Position: x=272, y=351, w=40, h=31
+
+27. $2.759 - plus
+   Raw text: '2.759'
+   Confidence: 70.78%
+   Engine: easy
+   Position: x=306, y=433, w=93, h=52
+
+28. $1.759 - plus
+   Raw text: '1.759'
+   Confidence: 60.52%
+   Engine: easy
+   Position: x=245, y=346, w=75, h=43
+
+29. $2.999 - plus
+   Raw text: '2,999'
+   Confidence: 54.69%
+   Engine: easy
+   Position: x=454, y=418, w=103, h=60
+
+30. $0.590 - reguar
+   Raw text: '59'
+   Confidence: 39.00%
+   Engine: tesseract
+   Position: x=289, y=277, w=24, h=17
+
+31. $0.830 - Unknown (Group 4)
+   Raw text: '‘83'
+   Confidence: 38.00%
+   Engine: tesseract
+   Position: x=450, y=516, w=32, h=24
+
+32. $0.500 - plus
+   Raw text: 'soe'
+   Confidence: 37.00%
+   Engine: tesseract
+   Position: x=460, y=456, w=60, h=11
+
+33. $2.999 - plus
+   Raw text: '2.999'
+   Confidence: 28.00%
+   Engine: tesseract
+   Position: x=371, y=342, w=69, h=35
+
+34. $2.458 - reguar
+   Raw text: '2458'
+   Confidence: 24.74%
+   Engine: easy
+   Position: x=246, y=269, w=74, h=47
+
+35. $0.510 - regular
+   Raw text: 'Diesel'
+   Confidence: 20.97%
+   Engine: easy
+   Position: x=342, y=319, w=42, h=19
+
+36. $22.759 - plus
+   Raw text: '22.759'
+   Confidence: 12.55%
+   Engine: easy
+   Position: x=243, y=345, w=77, h=45
+
+37. $1.510 - regular
+   Raw text: '{DIesel'
+   Confidence: 11.30%
+   Engine: easy
+   Position: x=342, y=320, w=41, h=19
+
+38. $0.515 - plus
+   Raw text: 'GOMASI@E VSq}'
+   Confidence: 2.17%
+   Engine: easy
+   Position: x=400, y=451, w=81, h=20
+
+
+============================================================

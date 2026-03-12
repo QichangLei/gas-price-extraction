@@ -1,0 +1,200 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 32 price(s) (sorted by confidence):
+
+1. $4.098 - Unknown (Group 1)
+   Raw text: '4098'
+   Confidence: 99.53%
+   Engine: paddle
+   Position: x=285, y=535, w=26, h=11
+
+2. $0.110 - regular [detected by 2 engines]
+   Raw text: 'Mobill'
+   Confidence: 99.34%
+   Engine: easy (+)
+   Position: x=104, y=270, w=146, h=52
+
+3. $4.090 - Unknown (Group 3)
+   Raw text: '409'
+   Confidence: 98.62%
+   Engine: paddle
+   Position: x=355, y=669, w=31, h=13
+
+4. $1.010 - regular
+   Raw text: 'lobil'
+   Confidence: 97.32%
+   Engine: paddle
+   Position: x=407, y=303, w=108, h=49
+
+5. $9.682 - regular [detected by 3 engines]
+   Raw text: '9682'
+   Confidence: 89.13%
+   Engine: paddle (+)
+   Position: x=307, y=316, w=86, h=41
+
+6. $6.820 - regula
+   Raw text: '%682'
+   Confidence: 88.26%
+   Engine: paddle
+   Position: x=384, y=394, w=106, h=52
+
+7. $3.098 - regula
+   Raw text: '3.098'
+   Confidence: 87.71%
+   Engine: paddle
+   Position: x=309, y=365, w=80, h=37
+
+8. $4.090 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: '409'
+   Confidence: 87.35%
+   Engine: paddle (+)
+   Position: x=286, y=538, w=16, h=7
+
+9. $0.110 - regular
+   Raw text: 'Mobill'
+   Confidence: 86.78%
+   Engine: paddle
+   Position: x=395, y=303, w=138, h=50
+
+10. $2.498 - regula
+   Raw text: '2.498'
+   Confidence: 86.35%
+   Engine: paddle
+   Position: x=381, y=332, w=110, h=58
+
+11. $2.498 - regular [detected by 2 engines]
+   Raw text: '2.498'
+   Confidence: 85.22%
+   Engine: paddle (+easy)
+   Position: x=307, y=268, w=84, h=42
+
+12. $0.110 - regula
+   Raw text: 'Mobill'
+   Confidence: 83.95%
+   Engine: paddle
+   Position: x=498, y=379, w=169, h=64
+
+13. $2.890 - regula
+   Raw text: '289'
+   Confidence: 82.37%
+   Engine: paddle
+   Position: x=311, y=319, w=75, h=33
+
+14. $2.490 - regular
+   Raw text: '2.490'
+   Confidence: 81.86%
+   Engine: paddle
+   Position: x=310, y=272, w=78, h=37
+
+15. $3.098 - Unknown (Group 1)
+   Raw text: '3098'
+   Confidence: 80.35%
+   Engine: paddle
+   Position: x=385, y=452, w=106, h=55
+
+16. $8.620 - regular [detected by 2 engines]
+   Raw text: '86h2'
+   Confidence: 78.48%
+   Engine: paddle (+)
+   Position: x=306, y=268, w=84, h=41
+
+17. $1.090 - Unknown (Group 1)
+   Raw text: '109'
+   Confidence: 68.94%
+   Engine: paddle
+   Position: x=288, y=538, w=16, h=7
+
+18. $8.600 - regula [detected by 2 engines]
+   Raw text: '860E'
+   Confidence: 63.37%
+   Engine: paddle (+)
+   Position: x=309, y=364, w=84, h=42
+
+19. $2.801 - regular
+   Raw text: '28AAobil'
+   Confidence: 50.52%
+   Engine: easy
+   Position: x=301, y=301, w=224, h=62
+
+20. $2.480 - regular [detected by 3 engines]
+   Raw text: '24g8,'
+   Confidence: 49.47%
+   Engine: easy (+)
+   Position: x=302, y=264, w=92, h=50
+
+21. $2.480 - regula
+   Raw text: '24g8,'
+   Confidence: 35.83%
+   Engine: easy
+   Position: x=379, y=333, w=116, h=60
+
+22. $3.980 - regula
+   Raw text: '398'
+   Confidence: 33.16%
+   Engine: easy
+   Position: x=304, y=360, w=92, h=48
+
+23. $0.380 - regula
+   Raw text: 'J38'
+   Confidence: 32.33%
+   Engine: easy
+   Position: x=305, y=363, w=88, h=44
+
+24. $0.280 - regula
+   Raw text: '"28'
+   Confidence: 28.00%
+   Engine: tesseract
+   Position: x=267, y=320, w=84, h=34
+
+25. $2.001 - regular
+   Raw text: '2Eo obill'
+   Confidence: 23.57%
+   Engine: easy
+   Position: x=301, y=299, w=224, h=62
+
+26. $2.897 - regular
+   Raw text: '28977'
+   Confidence: 21.00%
+   Engine: easy
+   Position: x=304, y=312, w=92, h=48
+
+27. $3.380 - Unknown (Group 1)
+   Raw text: '338'
+   Confidence: 14.85%
+   Engine: easy
+   Position: x=382, y=454, w=112, h=56
+
+28. $8.010 - regula
+   Raw text: 'z8yobil'
+   Confidence: 14.65%
+   Engine: easy
+   Position: x=376, y=377, w=280, h=78
+
+29. $4.440 - Unknown (Group 2)
+   Raw text: '44e4d'
+   Confidence: 4.08%
+   Engine: easy
+   Position: x=616, y=598, w=22, h=8
+
+30. $5.100 - regula
+   Raw text: 'Slotamc'
+   Confidence: 2.91%
+   Engine: easy
+   Position: x=256, y=372, w=34, h=8
+
+31. $5.100 - regular
+   Raw text: 'ReseIot'
+   Confidence: 2.12%
+   Engine: easy
+   Position: x=254, y=270, w=30, h=13
+
+32. $4.445 - Unknown (Group 2)
+   Raw text: '44e4ds'
+   Confidence: 0.60%
+   Engine: easy
+   Position: x=616, y=598, w=22, h=8
+
+
+============================================================

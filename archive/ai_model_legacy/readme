@@ -1,0 +1,2 @@
+python ./AI_model/smart_gas_extractor_v2.py ./data/bright ./output --analyze-only
+test on a folder

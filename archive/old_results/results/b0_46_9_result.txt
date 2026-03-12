@@ -1,0 +1,134 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 21 price(s) (sorted by confidence):
+
+1. $2.650 - reg [detected by 2 engines]
+   Raw text: '2650'
+   Confidence: 99.34%
+   Engine: easy (+)
+   Position: x=339, y=198, w=121, h=67
+
+2. $2.990 - reg [detected by 2 engines]
+   Raw text: '2.99'
+   Confidence: 98.97%
+   Engine: paddle (+)
+   Position: x=341, y=263, w=115, h=70
+
+3. $4.592 - reg [detected by 2 engines]
+   Raw text: '4592'
+   Confidence: 95.20%
+   Engine: paddle (+)
+   Position: x=342, y=198, w=115, h=65
+
+4. $4.592 - reg
+   Raw text: '4592'
+   Confidence: 95.04%
+   Engine: paddle
+   Position: x=427, y=248, w=141, h=79
+
+5. $2.650 - reg
+   Raw text: '2650'
+   Confidence: 92.15%
+   Engine: easy
+   Position: x=422, y=243, w=152, h=89
+
+6. $2.991 - plus
+   Raw text: '2.991'
+   Confidence: 90.50%
+   Engine: paddle
+   Position: x=428, y=333, w=140, h=80
+
+7. $3.178 - plus
+   Raw text: '3.178'
+   Confidence: 87.51%
+   Engine: paddle
+   Position: x=344, y=341, w=108, h=58
+
+8. $3.170 - prem
+   Raw text: '3.170'
+   Confidence: 82.31%
+   Engine: paddle
+   Position: x=430, y=427, w=136, h=71
+
+9. $2.651 - reg [detected by 2 engines]
+   Raw text: '2651'
+   Confidence: 73.01%
+   Engine: easy (+)
+   Position: x=339, y=198, w=121, h=66
+
+10. $1.780 - plus
+   Raw text: '1/78'
+   Confidence: 64.68%
+   Engine: easy
+   Position: x=345, y=341, w=114, h=62
+
+11. $0.550 - Unknown (Group 1)
+   Raw text: 'Ss'
+   Confidence: 53.00%
+   Engine: tesseract
+   Position: x=416, y=95, w=25, h=32
+
+12. $2.993 - plus
+   Raw text: '2.993'
+   Confidence: 41.51%
+   Engine: easy
+   Position: x=343, y=268, w=117, h=65
+
+13. $0.400 - prem
+   Raw text: '40k'
+   Confidence: 36.00%
+   Engine: tesseract
+   Position: x=438, y=431, w=123, h=64
+
+14. $0.410 - prem
+   Raw text: '41'
+   Confidence: 27.00%
+   Engine: tesseract
+   Position: x=351, y=345, w=96, h=51
+
+15. $2.440 - plus
+   Raw text: '2.44%'
+   Confidence: 24.00%
+   Engine: tesseract
+   Position: x=349, y=275, w=98, h=50
+
+16. $2.948 - plus
+   Raw text: '2.948'
+   Confidence: 22.01%
+   Engine: easy
+   Position: x=343, y=269, w=116, h=62
+
+17. $2.450 - plus
+   Raw text: '245i'
+   Confidence: 20.00%
+   Engine: tesseract
+   Position: x=349, y=274, w=100, h=51
+
+18. $2.948 - plus
+   Raw text: '2.948'
+   Confidence: 19.63%
+   Engine: easy
+   Position: x=430, y=334, w=144, h=81
+
+19. $0.150 - plus
+   Raw text: 'Plus'
+   Confidence: 19.00%
+   Engine: tesseract
+   Position: x=227, y=279, w=76, h=31
+
+20. $0.490 - plus
+   Raw text: '49;'
+   Confidence: 13.00%
+   Engine: tesseract
+   Position: x=349, y=274, w=100, h=51
+
+21. $0.910 - plus
+   Raw text: '9q1'
+   Confidence: 9.44%
+   Engine: easy
+   Position: x=379, y=273, w=74, h=38
+
+
+============================================================

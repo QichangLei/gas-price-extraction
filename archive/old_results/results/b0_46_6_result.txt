@@ -1,0 +1,230 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 37 price(s) (sorted by confidence):
+
+1. $2.999 - Unknown (Group 2) [detected by 10 engines]
+   Raw text: '2.999'
+   Confidence: 99.75%
+   Engine: paddle (+easy, tesseract)
+   Position: x=380, y=337, w=56, h=25
+
+2. $2.959 - Unknown (Group 1) [detected by 7 engines]
+   Raw text: '2.959'
+   Confidence: 99.69%
+   Engine: paddle (+easy)
+   Position: x=378, y=287, w=58, h=28
+
+3. $2.999 - Unknown (Group 2) [detected by 2 engines]
+   Raw text: '2.999'
+   Confidence: 99.69%
+   Engine: paddle (+easy)
+   Position: x=476, y=421, w=68, h=32
+
+4. $2.959 - Unknown (Group 2) [detected by 2 engines]
+   Raw text: '2.959'
+   Confidence: 99.69%
+   Engine: paddle (+easy)
+   Position: x=474, y=360, w=69, h=33
+
+5. $2.599 - Unknown (Group 1)
+   Raw text: '2.599'
+   Confidence: 99.54%
+   Engine: paddle
+   Position: x=291, y=293, w=52, h=24
+
+6. $2.599 - Unknown (Group 1) [detected by 3 engines]
+   Raw text: '2599'
+   Confidence: 98.68%
+   Engine: easy (+paddle)
+   Position: x=290, y=292, w=56, h=26
+
+7. $2.759 - Unknown (Group 2) [detected by 4 engines]
+   Raw text: '2.759'
+   Confidence: 98.50%
+   Engine: paddle (+)
+   Position: x=289, y=337, w=60, h=27
+
+8. $2.759 - Unknown (Group 2)
+   Raw text: '2.759'
+   Confidence: 97.95%
+   Engine: paddle
+   Position: x=363, y=423, w=69, h=33
+
+9. $6.662 - Unknown (Group 2)
+   Raw text: '6662'
+   Confidence: 97.40%
+   Engine: paddle
+   Position: x=380, y=334, w=58, h=31
+
+10. $1.050 - Unknown (Group 3)
+   Raw text: 'ENVIOSAC'
+   Confidence: 95.67%
+   Engine: paddle
+   Position: x=742, y=511, w=43, h=15
+
+11. $6.562 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: '6562'
+   Confidence: 95.61%
+   Engine: paddle (+)
+   Position: x=380, y=288, w=56, h=26
+
+12. $6.652 - Unknown (Group 2)
+   Raw text: '6652'
+   Confidence: 94.67%
+   Engine: paddle
+   Position: x=363, y=364, w=68, h=35
+
+13. $2.159 - Unknown (Group 2) [detected by 2 engines]
+   Raw text: '2 159'
+   Confidence: 89.37%
+   Engine: easy (+)
+   Position: x=292, y=338, w=54, h=26
+
+14. $5.100 - Unknown (Group 2)
+   Raw text: 'CAMSIO'
+   Confidence: 89.04%
+   Engine: paddle
+   Position: x=593, y=360, w=33, h=10
+
+15. $0.550 - Unknown (Group 2) [detected by 2 engines]
+   Raw text: 'OMAS DEUS'
+   Confidence: 88.87%
+   Engine: paddle (+)
+   Position: x=173, y=403, w=47, h=10
+
+16. $6.652 - Unknown (Group 1)
+   Raw text: '665'2'
+   Confidence: 87.15%
+   Engine: paddle
+   Position: x=291, y=292, w=53, h=26
+
+17. $0.550 - Unknown (Group 2)
+   Raw text: 'GOMAS DE USC'
+   Confidence: 87.11%
+   Engine: paddle
+   Position: x=168, y=399, w=53, h=16
+
+18. $6.652 - Unknown (Group 1)
+   Raw text: '665'2'
+   Confidence: 86.84%
+   Engine: paddle
+   Position: x=288, y=290, w=61, h=29
+
+19. $5.100 - Unknown (Group 2)
+   Raw text: 'CAMSIO'
+   Confidence: 82.88%
+   Engine: paddle
+   Position: x=746, y=452, w=34, h=7
+
+20. $2.993 - Unknown (Group 2)
+   Raw text: '2.993'
+   Confidence: 82.00%
+   Engine: tesseract
+   Position: x=482, y=426, w=59, h=23
+
+21. $2.598 - Unknown (Group 1)
+   Raw text: '2598'
+   Confidence: 74.22%
+   Engine: easy
+   Position: x=290, y=292, w=56, h=26
+
+22. $0.110 - Unknown (Group 2)
+   Raw text: 'ALINEANIE'
+   Confidence: 73.98%
+   Engine: paddle
+   Position: x=738, y=437, w=43, h=10
+
+23. $1.050 - Unknown (Group 2)
+   Raw text: 'IOSAC'
+   Confidence: 73.93%
+   Engine: paddle
+   Position: x=605, y=410, w=20, h=11
+
+24. $0.150 - Unknown (Group 2)
+   Raw text: '15)'
+   Confidence: 65.00%
+   Engine: tesseract
+   Position: x=313, y=343, w=19, h=18
+
+25. $2.759 - Unknown (Group 2)
+   Raw text: '2.759'
+   Confidence: 57.96%
+   Engine: easy
+   Position: x=292, y=338, w=54, h=26
+
+26. $0.330 - Unknown (Group 2)
+   Raw text: '33'
+   Confidence: 54.00%
+   Engine: tesseract
+   Position: x=609, y=424, w=17, h=7
+
+27. $2.599 - Unknown (Group 2)
+   Raw text: '2599'
+   Confidence: 53.94%
+   Engine: easy
+   Position: x=359, y=363, w=77, h=38
+
+28. $5.010 - Unknown (Group 2)
+   Raw text: 'SOEIE'
+   Confidence: 50.58%
+   Engine: paddle
+   Position: x=190, y=404, w=30, h=7
+
+29. $2.159 - Unknown (Group 2)
+   Raw text: '2.159'
+   Confidence: 49.75%
+   Engine: easy
+   Position: x=361, y=421, w=75, h=38
+
+30. $2.599 - Unknown (Group 1)
+   Raw text: '2599'
+   Confidence: 49.40%
+   Engine: easy
+   Position: x=288, y=290, w=59, h=30
+
+31. $2.775 - Unknown (Group 2)
+   Raw text: '27759'
+   Confidence: 43.35%
+   Engine: easy
+   Position: x=292, y=338, w=54, h=26
+
+32. $2.954 - Unknown (Group 1)
+   Raw text: '2 954'
+   Confidence: 27.02%
+   Engine: easy
+   Position: x=380, y=288, w=56, h=26
+
+33. $7.759 - Unknown (Group 2)
+   Raw text: '7759'
+   Confidence: 26.60%
+   Engine: easy
+   Position: x=308, y=338, w=38, h=26
+
+34. $1.599 - Unknown (Group 1)
+   Raw text: '1599'
+   Confidence: 26.44%
+   Engine: easy
+   Position: x=290, y=294, w=56, h=24
+
+35. $0.292 - Unknown (Group 2)
+   Raw text: '02927'
+   Confidence: 8.93%
+   Engine: easy
+   Position: x=87, y=399, w=56, h=20
+
+36. $2.520 - Unknown (Group 2)
+   Raw text: '{252'
+   Confidence: 5.43%
+   Engine: easy
+   Position: x=194, y=412, w=25, h=14
+
+37. $0.101 - Unknown (Group 2)
+   Raw text: 'OZUlGkiquol'
+   Confidence: 2.06%
+   Engine: easy
+   Position: x=23, y=421, w=66, h=14
+
+
+============================================================

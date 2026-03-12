@@ -1,0 +1,28 @@
+# API keys
+src/pipeline/key
+*.key
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Vim swap files
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Large binary / video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pt
+
+# OS
+.DS_Store

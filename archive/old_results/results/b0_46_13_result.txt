@@ -1,0 +1,164 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 26 price(s) (sorted by confidence):
+
+1. $3.050 - super [detected by 3 engines]
+   Raw text: '305'
+   Confidence: 100.00%
+   Engine: easy (+paddle)
+   Position: x=290, y=344, w=81, h=52
+
+2. $2.950 - yplus [detected by 7 engines]
+   Raw text: '295'
+   Confidence: 99.99%
+   Engine: easy (+paddle, tesseract)
+   Position: x=292, y=294, w=76, h=48
+
+3. $2.959 - yplus
+   Raw text: '2959'
+   Confidence: 99.99%
+   Engine: easy
+   Position: x=290, y=291, w=93, h=53
+
+4. $3.059 - super [detected by 2 engines]
+   Raw text: '3059'
+   Confidence: 99.98%
+   Engine: easy (+)
+   Position: x=289, y=342, w=95, h=55
+
+5. $2.959 - yplus [detected by 3 engines]
+   Raw text: '2959'
+   Confidence: 99.96%
+   Engine: easy (+)
+   Position: x=289, y=290, w=96, h=55
+
+6. $2.650 - yplus [detected by 4 engines]
+   Raw text: '265'
+   Confidence: 99.94%
+   Engine: easy (+tesseract)
+   Position: x=294, y=244, w=74, h=48
+
+7. $2.659 - yplus [detected by 2 engines]
+   Raw text: '2659'
+   Confidence: 99.93%
+   Engine: easy (+)
+   Position: x=292, y=236, w=90, h=57
+
+8. $3.050 - super [detected by 3 engines]
+   Raw text: '305'
+   Confidence: 99.91%
+   Engine: paddle (+)
+   Position: x=291, y=347, w=85, h=44
+
+9. $2.959 - yplus [detected by 4 engines]
+   Raw text: '2959'
+   Confidence: 98.89%
+   Engine: paddle (+)
+   Position: x=292, y=294, w=86, h=48
+
+10. $3.050 - super [detected by 4 engines]
+   Raw text: '305°'
+   Confidence: 96.00%
+   Engine: tesseract (+)
+   Position: x=301, y=352, w=74, h=36
+
+11. $2.659 - yplus
+   Raw text: '2659'
+   Confidence: 94.84%
+   Engine: paddle
+   Position: x=367, y=300, w=112, h=65
+
+12. $2.659 - yplus [detected by 4 engines]
+   Raw text: '2659'
+   Confidence: 94.29%
+   Engine: paddle (+)
+   Position: x=289, y=241, w=91, h=52
+
+13. $2.959 - super
+   Raw text: '2959'
+   Confidence: 94.22%
+   Engine: paddle
+   Position: x=368, y=365, w=112, h=65
+
+14. $3.059 - super
+   Raw text: '3059'
+   Confidence: 90.25%
+   Engine: paddle
+   Position: x=293, y=349, w=82, h=42
+
+15. $2.950 - super
+   Raw text: '295°'
+   Confidence: 90.00%
+   Engine: tesseract
+   Position: x=375, y=374, w=94, h=47
+
+16. $2.650 - yplus [detected by 2 engines]
+   Raw text: '[265'
+   Confidence: 87.53%
+   Engine: easy (+tesseract)
+   Position: x=259, y=242, w=112, h=54
+
+17. $3.059 - super
+   Raw text: '3059'
+   Confidence: 87.24%
+   Engine: paddle
+   Position: x=369, y=431, w=109, h=62
+
+18. $3.050 - super
+   Raw text: '305°'
+   Confidence: 85.00%
+   Engine: tesseract
+   Position: x=376, y=440, w=93, h=46
+
+19. $0.260 - yplus
+   Raw text: '26.'
+   Confidence: 75.00%
+   Engine: tesseract
+   Position: x=301, y=251, w=37, h=35
+
+20. $3.050 - super
+   Raw text: '#305'
+   Confidence: 58.00%
+   Engine: tesseract
+   Position: x=269, y=354, w=92, h=34
+
+21. $3.058 - super
+   Raw text: '3058'
+   Confidence: 51.50%
+   Engine: easy
+   Position: x=289, y=344, w=83, h=53
+
+22. $2.958 - super
+   Raw text: '2958'
+   Confidence: 35.95%
+   Engine: easy
+   Position: x=364, y=367, w=99, h=65
+
+23. $0.500 - super
+   Raw text: 'Soe]'
+   Confidence: 29.00%
+   Engine: tesseract
+   Position: x=555, y=453, w=50, h=37
+
+24. $0.150 - plus
+   Raw text: 'Yplus'
+   Confidence: 25.28%
+   Engine: easy
+   Position: x=263, y=315, w=28, h=20
+
+25. $2.658 - yplus
+   Raw text: ''2658'
+   Confidence: 24.31%
+   Engine: easy
+   Position: x=364, y=303, w=100, h=65
+
+26. $3.058 - super
+   Raw text: '3058'
+   Confidence: 22.42%
+   Engine: easy
+   Position: x=367, y=435, w=94, h=60
+
+
+============================================================

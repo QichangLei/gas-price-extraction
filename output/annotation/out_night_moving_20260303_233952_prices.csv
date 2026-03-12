@@ -1,0 +1,7 @@
+fuel_type,validated_price,occurrence_count,total_detections,total_api_calls,presence_pct,agreement_pct
+MPö,1.978,1,1,8,12.5,100.0
+MPÖ,1.978,1,1,8,12.5,100.0
+MY,1.978,1,1,8,12.5,100.0
+95,2.028,3,3,8,37.5,100.0
+V-Power,2.158,3,3,8,37.5,100.0
+Diesel,2.177,3,3,8,37.5,100.0

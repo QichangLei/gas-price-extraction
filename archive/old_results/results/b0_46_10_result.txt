@@ -1,0 +1,230 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 37 price(s) (sorted by confidence):
+
+1. $2.490 - plus [detected by 2 engines]
+   Raw text: '249'
+   Confidence: 99.81%
+   Engine: paddle (+easy)
+   Position: x=385, y=323, w=93, h=47
+
+2. $2.890 - Unknown (Group 1) [detected by 5 engines]
+   Raw text: '289'
+   Confidence: 99.71%
+   Engine: paddle (+)
+   Position: x=307, y=299, w=80, h=40
+
+3. $0.150 - Unknown (Group 1)
+   Raw text: 'Plus'
+   Confidence: 99.49%
+   Engine: paddle
+   Position: x=357, y=382, w=16, h=12
+
+4. $5.010 - Unknown (Group 1) [detected by 3 engines]
+   Raw text: 'Gasoline'
+   Confidence: 99.49%
+   Engine: paddle (+)
+   Position: x=284, y=225, w=51, h=25
+
+5. $5.010 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: 'Gasoline'
+   Confidence: 99.14%
+   Engine: paddle (+easy)
+   Position: x=352, y=283, w=61, h=28
+
+6. $2.490 - Unknown (Group 1) [detected by 5 engines]
+   Raw text: '249%'
+   Confidence: 98.66%
+   Engine: paddle (+)
+   Position: x=305, y=255, w=83, h=43
+
+7. $2.898 - Unknown (Group 1) [detected by 5 engines]
+   Raw text: '2898'
+   Confidence: 98.03%
+   Engine: easy (+)
+   Position: x=307, y=300, w=80, h=39
+
+8. $5.150 - Unknown (Group 1)
+   Raw text: 'Self Serve'
+   Confidence: 97.73%
+   Engine: paddle
+   Position: x=424, y=295, w=58, h=28
+
+9. $2.890 - plus
+   Raw text: '289%'
+   Confidence: 96.68%
+   Engine: paddle
+   Position: x=384, y=374, w=100, h=51
+
+10. $5.150 - Unknown (Group 1) [detected by 3 engines]
+   Raw text: 'Self Serve'
+   Confidence: 96.34%
+   Engine: paddle (+easy)
+   Position: x=333, y=234, w=51, h=25
+
+11. $3.090 - plus [detected by 5 engines]
+   Raw text: '309%'
+   Confidence: 96.32%
+   Engine: paddle (+)
+   Position: x=308, y=342, w=79, h=39
+
+12. $2.490 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: '249'
+   Confidence: 96.00%
+   Engine: tesseract (+)
+   Position: x=313, y=263, w=54, h=28
+
+13. $3.090 - plus
+   Raw text: '309%'
+   Confidence: 94.02%
+   Engine: paddle
+   Position: x=387, y=428, w=98, h=48
+
+14. $5.115 - Unknown (Group 1)
+   Raw text: 'Sell Serve'
+   Confidence: 93.48%
+   Engine: paddle
+   Position: x=337, y=235, w=47, h=24
+
+15. $2.890 - plus
+   Raw text: '289'
+   Confidence: 93.00%
+   Engine: tesseract
+   Position: x=393, y=382, w=65, h=30
+
+16. $3.090 - plus
+   Raw text: '309'
+   Confidence: 93.00%
+   Engine: tesseract
+   Position: x=394, y=436, w=62, h=29
+
+17. $2.493 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: '2493'
+   Confidence: 91.07%
+   Engine: easy (+tesseract)
+   Position: x=306, y=257, w=81, h=41
+
+18. $0.490 - plus
+   Raw text: '49'
+   Confidence: 89.00%
+   Engine: tesseract
+   Position: x=417, y=334, w=41, h=26
+
+19. $3.093 - plus [detected by 4 engines]
+   Raw text: '3093'
+   Confidence: 86.31%
+   Engine: easy (+)
+   Position: x=305, y=340, w=88, h=44
+
+20. $2.890 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: '289;'
+   Confidence: 85.00%
+   Engine: tesseract (+)
+   Position: x=313, y=305, w=68, h=29
+
+21. $3.090 - plus
+   Raw text: '309;'
+   Confidence: 84.00%
+   Engine: tesseract
+   Position: x=314, y=348, w=66, h=27
+
+22. $2.498 - Unknown (Group 1) [detected by 4 engines]
+   Raw text: '2498'
+   Confidence: 82.68%
+   Engine: easy (+)
+   Position: x=305, y=257, w=86, h=44
+
+23. $2.898 - plus
+   Raw text: '2898'
+   Confidence: 80.37%
+   Engine: easy
+   Position: x=381, y=372, w=101, h=53
+
+24. $3.098 - plus
+   Raw text: '3098'
+   Confidence: 74.21%
+   Engine: easy
+   Position: x=307, y=341, w=85, h=43
+
+25. $5.011 - Unknown (Group 1) [detected by 5 engines]
+   Raw text: 'Gasollne'
+   Confidence: 72.78%
+   Engine: easy (+)
+   Position: x=281, y=224, w=52, h=28
+
+26. $0.280 - Unknown (Group 1)
+   Raw text: '28°'
+   Confidence: 71.00%
+   Engine: tesseract
+   Position: x=314, y=306, w=50, h=23
+
+27. $3.060 - plus
+   Raw text: '306'
+   Confidence: 66.00%
+   Engine: tesseract
+   Position: x=316, y=348, w=49, h=24
+
+28. $0.200 - plus
+   Raw text: '20!'
+   Confidence: 63.00%
+   Engine: tesseract
+   Position: x=317, y=349, w=41, h=20
+
+29. $3.093 - plus
+   Raw text: ''3093'
+   Confidence: 57.89%
+   Engine: easy
+   Position: x=381, y=426, w=103, h=51
+
+30. $0.100 - Unknown (Group 1)
+   Raw text: 'IECHRON'
+   Confidence: 52.40%
+   Engine: easy
+   Position: x=373, y=230, w=94, h=55
+
+31. $3.092 - plus
+   Raw text: '“3092'
+   Confidence: 50.00%
+   Engine: tesseract
+   Position: x=299, y=347, w=83, h=28
+
+32. $0.240 - Unknown (Group 1)
+   Raw text: '24'
+   Confidence: 47.00%
+   Engine: tesseract
+   Position: x=315, y=264, w=41, h=24
+
+33. $5.110 - Unknown (Group 1)
+   Raw text: 'Scll'
+   Confidence: 25.86%
+   Engine: easy
+   Position: x=425, y=297, w=26, h=20
+
+34. $0.500 - Unknown (Group 1)
+   Raw text: 'Casotne'
+   Confidence: 21.00%
+   Engine: tesseract
+   Position: x=286, y=229, w=41, h=17
+
+35. $0.510 - Unknown (Group 3)
+   Raw text: 'sil)'
+   Confidence: 18.00%
+   Engine: tesseract
+   Position: x=550, y=557, w=19, h=7
+
+36. $0.550 - Unknown (Group 1) [detected by 2 engines]
+   Raw text: 'Ssn '
+   Confidence: 4.53%
+   Engine: easy (+)
+   Position: x=338, y=235, w=49, h=25
+
+37. $5.572 - Unknown (Group 1)
+   Raw text: 'Sev Sc7v2'
+   Confidence: 1.37%
+   Engine: easy
+   Position: x=339, y=237, w=46, h=20
+
+
+============================================================

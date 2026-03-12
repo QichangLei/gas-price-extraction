@@ -1,0 +1,212 @@
+============================================================
+GAS PRICE EXTRACTION RESULTS
+============================================================
+
+Found 34 price(s) (sorted by confidence):
+
+1. $2.820 - diesel [detected by 7 engines]
+   Raw text: '282'
+   Confidence: 99.77%
+   Engine: paddle (+easy)
+   Position: x=286, y=366, w=111, h=56
+
+2. $2.820 - diesel
+   Raw text: '282'
+   Confidence: 99.72%
+   Engine: paddle
+   Position: x=360, y=459, w=133, h=68
+
+3. $0.260 - regular
+   Raw text: '26'
+   Confidence: 99.50%
+   Engine: easy
+   Position: x=288, y=224, w=60, h=50
+
+4. $0.510 - Unknown (Group 2)
+   Raw text: 'Diesel'
+   Confidence: 99.39%
+   Engine: paddle
+   Position: x=306, y=482, w=37, h=15
+
+5. $6.620 - regular [detected by 2 engines]
+   Raw text: '662'
+   Confidence: 99.01%
+   Engine: paddle (+)
+   Position: x=288, y=267, w=103, h=55
+
+6. $0.510 - diesel [detected by 2 engines]
+   Raw text: 'Diesel'
+   Confidence: 97.94%
+   Engine: paddle (+easy)
+   Position: x=246, y=383, w=28, h=14
+
+7. $2.678 - regular [detected by 4 engines]
+   Raw text: '2.678'
+   Confidence: 97.68%
+   Engine: paddle (+)
+   Position: x=289, y=219, w=101, h=53
+
+8. $2.678 - regular
+   Raw text: '2.678'
+   Confidence: 96.90%
+   Engine: paddle
+   Position: x=361, y=274, w=127, h=66
+
+9. $2.998 - regular [detected by 2 engines]
+   Raw text: '2.998'
+   Confidence: 96.79%
+   Engine: paddle (+)
+   Position: x=289, y=266, w=105, h=55
+
+10. $3.078 - diesel
+   Raw text: '3.078'
+   Confidence: 95.95%
+   Engine: paddle
+   Position: x=367, y=397, w=125, h=64
+
+11. $3.078 - supnmot [detected by 3 engines]
+   Raw text: '3.078'
+   Confidence: 95.78%
+   Engine: paddle (+)
+   Position: x=292, y=318, w=101, h=51
+
+12. $2.998 - supreme
+   Raw text: '2.998'
+   Confidence: 95.38%
+   Engine: paddle
+   Position: x=362, y=335, w=129, h=66
+
+13. $2.990 - regular
+   Raw text: '2990'
+   Confidence: 93.95%
+   Engine: easy
+   Position: x=292, y=270, w=98, h=50
+
+14. $1.510 - diesel [detected by 2 engines]
+   Raw text: 'Dlesel'
+   Confidence: 92.65%
+   Engine: easy (+)
+   Position: x=245, y=385, w=32, h=14
+
+15. $2.990 - regular
+   Raw text: '299'
+   Confidence: 87.24%
+   Engine: easy
+   Position: x=290, y=270, w=80, h=54
+
+16. $2.990 - regular
+   Raw text: '299_'
+   Confidence: 85.65%
+   Engine: easy
+   Position: x=289, y=265, w=102, h=60
+
+17. $1.510 - diesel
+   Raw text: 'Dlesel'
+   Confidence: 72.62%
+   Engine: easy
+   Position: x=306, y=482, w=39, h=17
+
+18. $9.980 - regular
+   Raw text: '998'
+   Confidence: 69.03%
+   Engine: easy
+   Position: x=310, y=262, w=83, h=56
+
+19. $0.100 - supnmot
+   Raw text: '10'
+   Confidence: 68.90%
+   Engine: easy
+   Position: x=295, y=327, w=52, h=42
+
+20. $0.800 - supnmot
+   Raw text: 'BLO'E'
+   Confidence: 68.77%
+   Engine: paddle
+   Position: x=293, y=317, w=102, h=52
+
+21. $0.430 - diesel
+   Raw text: '43,'
+   Confidence: 64.00%
+   Engine: tesseract
+   Position: x=103, y=468, w=29, h=23
+
+22. $6.720 - regular
+   Raw text: '.672'
+   Confidence: 62.50%
+   Engine: paddle
+   Position: x=312, y=225, w=72, h=37
+
+23. $1.400 - regula
+   Raw text: '140)'
+   Confidence: 59.00%
+   Engine: tesseract
+   Position: x=359, y=240, w=31, h=18
+
+24. $0.100 - supreme
+   Raw text: 'I0'
+   Confidence: 48.23%
+   Engine: easy
+   Position: x=367, y=335, w=20, h=22
+
+25. $0.300 - supnmot
+   Raw text: '30'
+   Confidence: 42.41%
+   Engine: easy
+   Position: x=291, y=327, w=56, h=44
+
+26. $0.100 - regular
+   Raw text: 'I0'
+   Confidence: 35.42%
+   Engine: easy
+   Position: x=458, y=292, w=26, h=30
+
+27. $0.500 - supremei
+   Raw text: 'Supremot'
+   Confidence: 33.03%
+   Engine: easy
+   Position: x=307, y=417, w=58, h=20
+
+28. $0.500 - supreme [detected by 2 engines]
+   Raw text: 'Supnmot'
+   Confidence: 32.54%
+   Engine: easy (+)
+   Position: x=245, y=333, w=48, h=19
+
+29. $2.618 - regular
+   Raw text: '2618'
+   Confidence: 29.94%
+   Engine: easy
+   Position: x=287, y=215, w=106, h=60
+
+30. $0.820 - diesel [detected by 2 engines]
+   Raw text: 'B2:'
+   Confidence: 28.71%
+   Engine: easy (+)
+   Position: x=310, y=364, w=84, h=56
+
+31. $0.450 - diesel
+   Raw text: '45'
+   Confidence: 28.00%
+   Engine: tesseract
+   Position: x=103, y=468, w=26, h=20
+
+32. $0.100 - supnmot
+   Raw text: '10'
+   Confidence: 26.94%
+   Engine: easy
+   Position: x=364, y=318, w=24, h=40
+
+33. $0.820 - diesel
+   Raw text: '82p'
+   Confidence: 22.56%
+   Engine: easy
+   Position: x=393, y=461, w=96, h=64
+
+34. $5.000 - supreme
+   Raw text: 'Sopronot'
+   Confidence: 6.38%
+   Engine: easy
+   Position: x=245, y=332, w=44, h=20
+
+
+============================================================

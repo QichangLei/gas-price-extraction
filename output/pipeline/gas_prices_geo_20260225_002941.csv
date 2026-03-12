@@ -1,0 +1,45 @@
+Image_Number,Fuel_Type,Price,Gas_Station_Brand,Payment_Type,Confidence,Latitude,Longitude,Captured_At,Source_File
+21,Regular,3.659,Chevron,NA,92,NA,NA,NA,NA
+21,Diesel,3.659,Chevron,NA,92,NA,NA,NA,NA
+22,REGULAR,3.059,SAFEWAY,NA,95,NA,NA,NA,NA
+22,DIESEL,3.059,SAFEWAY,NA,95,NA,NA,NA,NA
+23,Regular Cash / Check / Debit Card,3.699,Chevron,Cash,85,NA,NA,NA,NA
+23,Regular Credit / Debit,3.699,Chevron,Credit,85,NA,NA,NA,NA
+23,Diesel Cash / Check / Debit Card,3.699,Chevron,Cash,85,NA,NA,NA,NA
+23,Diesel Credit / Debit,3.699,Chevron,Credit,85,NA,NA,NA,NA
+24,Regular,3.659,Chevron,NA,92,NA,NA,NA,NA
+24,Diesel,3.659,Chevron,NA,92,NA,NA,NA,NA
+25,Regular,3.459,Shell,NA,90,NA,NA,NA,NA
+25,Plus,3.659,Shell,NA,90,NA,NA,NA,NA
+25,V-Power,3.859,Shell,NA,90,NA,NA,NA,NA
+26,Regular,2.899,Shell,NA,95,NA,NA,NA,NA
+26,Diesel,3.159,Shell,NA,95,NA,NA,NA,NA
+27,Regular,4.079,Shell,NA,88,NA,NA,NA,NA
+27,Plus,4.299,Shell,NA,88,NA,NA,NA,NA
+27,V-Power,4.399,Shell,NA,88,NA,NA,NA,NA
+27,Diesel,4.239,Shell,NA,88,NA,NA,NA,NA
+28,Regular,2.599,Mobil,NA,94,NA,NA,NA,NA
+28,Diesel Efficient,2.659,Mobil,NA,94,NA,NA,NA,NA
+29,Regular Cash,2.399,Exxon,Cash,95,NA,NA,NA,NA
+30,Regular,2.799,Exxon,NA,95,NA,NA,NA,NA
+30,Extra,3.199,Exxon,NA,95,NA,NA,NA,NA
+30,Supreme+,3.499,Exxon,NA,95,NA,NA,NA,NA
+31,UNLEADED,3.459,Kroger,NA,95,NA,NA,NA,NA
+31,MID-GRADE,3.559,Kroger,NA,95,NA,NA,NA,NA
+31,DIESEL,3.959,Kroger,NA,95,NA,NA,NA,NA
+32,UNLEADED,2.649,CLARK,NA,95,NA,NA,NA,NA
+33,Regular,2.599,Mobil,NA,94,NA,NA,NA,NA
+33,Diesel Efficient,2.659,Mobil,NA,94,NA,NA,NA,NA
+34,REG,2.699,Speedway,NA,95,NA,NA,NA,NA
+34,DSL,2.959,Speedway,NA,95,NA,NA,NA,NA
+35,Regular Self,2.659,Sunoco,NA,92,NA,NA,NA,NA
+35,Diesel Self,3.099,Sunoco,NA,92,NA,NA,NA,NA
+16,REGULAR UNLEADED CASH,2.599,Gulf,Cash,92,,,,36.png
+17,REGULAR FULL CASH UNLEADED,2.699,prestige,Cash,94,,,,37.png
+18,regular,2.699,bp,NA,92,,,,38.png
+19,UNLEAD CASH,2.319,VALERO,Cash,85,,,,39.png
+19,UNLEAD CREDIT,2.319,VALERO,Credit,85,,,,39.png
+20,regular,2.599,bp,Cash,95,,,,40.png
+20,silver,3.399,bp,Cash,95,,,,40.png
+20,ultimate,3.579,bp,Cash,95,,,,40.png
+20,diesel,3.499,bp,NA,95,,,,40.png

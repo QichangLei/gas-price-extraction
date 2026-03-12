@@ -1,0 +1,3 @@
+fuel_type,validated_price,occurrence_count,total_detections,total_api_calls,presence_pct,agreement_pct
+Super 95,5.769,72,98,98,100.0,73.5
+Diesel,5.839,80,98,98,100.0,81.6

@@ -1,0 +1,52 @@
+Image_Number,Fuel_Type,Price,Gas_Station_Brand,Payment_Type,Confidence,Latitude,Longitude,Captured_At,Source_File
+1,UNLEADED,3.359,Fred Meyer,NA,98,,,,0.png
+1,MID-GRADE,3.559,Fred Meyer,NA,98,,,,0.png
+1,PREMIUM,3.659,Fred Meyer,NA,98,,,,0.png
+1,DIESEL,3.639,Fred Meyer,NA,98,,,,0.png
+2,Regular,3.499,Chevron,Cash,95,,,,1.png
+2,Plus,3.659,Chevron,Cash,95,,,,1.png
+2,Supreme,3.799,Chevron,Cash,95,,,,1.png
+2,Diesel,3.999,Chevron,NA,95,,,,1.png
+3,Regular Self,2.799,Sunoco,NA,96,,,,10.png
+3,Ultra 93 Self,3.399,Sunoco,NA,96,,,,10.png
+4,Reg Self,2.799,Sunoco,NA,98,,,,11.png
+4,Ultra 93 Self,3.399,Sunoco,NA,98,,,,11.png
+5,Regular,2.629,Shell,NA,96,,,,12.png
+5,Diesel,2.799,Shell,NA,96,,,,12.png
+6,Regular,2.039,Exxon,NA,98,,,,13.png
+7,Regular,2.039,Exxon,NA,95,,,,14.png
+8,Regular,3.279,NA,Cash,94,,,,15.png
+8,Diesel,3.449,NA,Cash,94,,,,15.png
+9,REGULAR,2.499,Gran Prix Gasoline,NA,95,,,,16.png
+10,REGULAR UNLEADED,2.179,CITGO,NA,98,,,,17.png
+11,REGULAR UNLEADED,2.179,CITGO,NA,95,,,,18.png
+12,Regular,2.739,Shell,NA,92,,,,19.png
+12,Diesel,2.999,Shell,NA,92,,,,19.png
+13,Regular,2.599,Shell,NA,95,,,,2.png
+13,Diesel,2.799,Shell,NA,95,,,,2.png
+14,REG,2.659,Speedway,NA,98,,,,20.png
+14,PREM,3.059,Speedway,NA,98,,,,20.png
+15,Regular,3.559,NA,Cash,98,,,,3.png
+15,Regular,3.659,NA,Credit,98,,,,3.png
+15,Plus,3.799,NA,Cash,98,,,,3.png
+15,Plus,3.899,NA,Credit,98,,,,3.png
+15,Premium,3.959,NA,Cash,98,,,,3.png
+15,Premium,4.059,NA,Credit,98,,,,3.png
+16,Regular Gasoline,3.279,Shell,NA,95,,,,4.png
+16,Plus Gasoline,3.479,Shell,NA,95,,,,4.png
+16,V-Power Gasoline,3.579,Shell,NA,95,,,,4.png
+16,Diesel #2,3.679,Shell,NA,95,,,,4.png
+17,Regular,3.399,Exxon,NA,90,,,,5.png
+17,Extra,3.499,Exxon,NA,90,,,,5.png
+17,Supreme,3.799,Exxon,NA,90,,,,5.png
+18,Regular,2.899,Shell,NA,92,,,,6.png
+18,Diesel,3.159,Shell,NA,92,,,,6.png
+19,Regular,2.799,Shell,NA,95,,,,7.png
+19,Plus,3.299,Shell,NA,95,,,,7.png
+19,V-Power,3.399,Shell,NA,95,,,,7.png
+19,Diesel,3.099,Shell,NA,95,,,,7.png
+20,Regular,3.399,Exxon,NA,92,,,,8.png
+20,Extra,3.499,Exxon,NA,92,,,,8.png
+20,Supreme,3.799,Exxon,NA,92,,,,8.png
+21,Regular Self,2.959,Sunoco,NA,94,,,,9.png
+21,Ultra 93 Self,3.559,Sunoco,NA,94,,,,9.png

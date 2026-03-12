@@ -1,0 +1,31 @@
+Image_Number,Fuel_Type,Price,Gas_Station_Brand,Payment_Type,Confidence
+1,Regular,4.399,Shell,Cash,High
+1,Regular,4.479,Shell,Credit,High
+1,Diesel,6.699,Shell,NA,High
+2,Unleaded,1.799,BP,NA,High
+2,Diesel,2.049,BP,NA,High
+2,E15,1.769,BP,NA,High
+3,Regular,3.039,Exxon,NA,High
+3,Diesel #2,3.159,Exxon,NA,High
+4,Regular,2.449,Chevron,NA,High
+5,Regular,2.499,Phillips 66,NA,High
+5,Plus,2.799,Phillips 66,NA,High
+5,Premium,2.999,Phillips 66,NA,High
+6,E85,1.999,QuikTrip,NA,High
+6,Regular,2.259,QuikTrip,NA,High
+6,Plus,2.599,QuikTrip,NA,High
+6,Premium,2.899,QuikTrip,NA,High
+6,Diesel,2.939,QuikTrip,NA,High
+7,Regular,2.599,76,NA,High
+7,Plus,2.759,76,NA,High
+7,Premium,2.959,76,NA,High
+7,Diesel,2.999,76,NA,High
+8,Regular,2.599,Sunoco,NA,High
+8,Special,2.799,Sunoco,NA,High
+8,Super+,2.899,Sunoco,NA,High
+9,Regular,2.659,Marathon,NA,High
+9,Plus,2.999,Marathon,NA,High
+9,Premium,3.179,Marathon,NA,High
+10,Regular,2.499,Valero,NA,High
+10,Plus,2.899,Valero,NA,High
+10,Supreme,3.099,Valero,NA,High

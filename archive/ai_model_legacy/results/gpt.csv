@@ -1,0 +1,47 @@
+Image_Number,Fuel_Type,Price,Gas_Station_Brand,Payment_Type,Confidence
+1,Regular (Cash),4.39,Lukoil,Cash,High
+1,Regular (Credit),4.47,Lukoil,Credit,High
+1,Diesel,5.69,Lukoil,NA,High
+2,Unleaded,1.79,Murphy USA,NA,High
+2,Diesel,2.04,Murphy USA,NA,High
+2,E15,1.76,Murphy USA,NA,Medium
+3,Regular,3.03,Shell,NA,High
+3,Diesel,3.15,Shell,NA,High
+4,Regular,2.44,BP,NA,High
+5,Regular,2.49,Marathon,NA,High
+5,Plus,2.79,Marathon,NA,High
+5,Premium,2.99,Marathon,NA,High
+6,Regular,2.25,Sunoco,NA,High
+6,Plus,2.59,Sunoco,NA,High
+6,Premium,2.89,Sunoco,NA,High
+6,Diesel,2.93,Sunoco,NA,High
+7,Regular,2.59,Marathon,NA,High
+7,Plus,2.75,Marathon,NA,High
+7,Diesel,2.99,Marathon,NA,High
+8,Regular,2.59,Mobil,NA,High
+8,Special,2.79,Mobil,NA,High
+8,Super+,2.89,Mobil,NA,High
+9,Regular,2.65,Orion Fuels,NA,High
+9,Plus,2.99,Orion Fuels,NA,High
+9,Premium,3.11,Orion Fuels,NA,High
+10,Regular,2.49,Chevron,NA,High
+10,Plus,2.89,Chevron,NA,High
+10,Supreme,3.09,Chevron,NA,High
+11,Regular,2.49,Mobil,NA,High
+11,Extra,2.89,Mobil,NA,High
+11,Supreme,3.09,Mobil,NA,High
+12,Unleaded,2.65,Valero,NA,High
+12,Plus,2.95,Valero,NA,High
+12,Super,3.05,Valero,NA,High
+13,Unleaded,2.55,NA,NA,High
+13,Unleaded Plus,2.65,NA,NA,High
+13,Premium,2.95,NA,NA,High
+13,Diesel,2.82,NA,NA,High
+14,Regular,2.67,Exxon,NA,High
+14,Extra,2.99,Exxon,NA,High
+14,Supreme,3.07,Exxon,NA,High
+14,Diesel,2.82,Exxon,NA,High
+15,Regular,2.25,Sunoco,NA,High
+15,Plus,2.59,Sunoco,NA,High
+15,Premium,2.89,Sunoco,NA,High
+15,Diesel,2.93,Sunoco,NA,High
