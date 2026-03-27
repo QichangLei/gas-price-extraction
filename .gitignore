@@ -24,5 +24,9 @@ __pycache__/
 *.mkv
 *.pt
 
+# Generated outputs
+output/
+archive/debug_imgs/
+
 # OS
 .DS_Store

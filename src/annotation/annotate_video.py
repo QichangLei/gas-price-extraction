@@ -404,6 +404,48 @@ def draw_annotations(frame_bgr: np.ndarray, result: dict) -> np.ndarray:
 
 # ── Price validation & summary export ────────────────────────────────────────
 
+_GRADE_MAP = {
+    "regular":   "Regular",  "unleaded": "Regular",  "reg":     "Regular",
+    "midgrade":  "Mid-Grade","mid-grade":"Mid-Grade", "plus":    "Mid-Grade",
+    "premium":   "Premium",  "supreme":  "Premium",   "v-power": "Premium",
+    "diesel":    "Diesel",
+}
+_GRADE_ORDER = ["Regular", "Mid-Grade", "Premium", "Diesel"]
+
+
+def _normalise_fuel(fuel_type: str, payment_type: str) -> tuple[str, str]:
+    """
+    Split a potentially mixed fuel_type string (e.g. "Regular CASH") into
+    a canonical grade ("Regular") and payment ("Cash" / "Credit" / "NA").
+    Also accepts a separate payment_type field as fallback.
+    """
+    ft = fuel_type.strip()
+    ft_lower = ft.lower()
+
+    # Extract payment from fuel_type string
+    pay = None
+    if "credit" in ft_lower or "card" in ft_lower:
+        pay = "Credit"
+        ft_lower = re.sub(r"\s*(credit|card)\s*", " ", ft_lower).strip()
+    elif "cash" in ft_lower:
+        pay = "Cash"
+        ft_lower = re.sub(r"\s*cash\s*", " ", ft_lower).strip()
+
+    # Fallback to explicit payment_type field
+    if pay is None:
+        pt = str(payment_type or "").strip().lower()
+        if "credit" in pt or "card" in pt:
+            pay = "Credit"
+        elif "cash" in pt:
+            pay = "Cash"
+
+    # Normalize grade
+    for key, canonical in _GRADE_MAP.items():
+        if key in ft_lower:
+            return canonical, pay or "NA"
+    return ft.title(), pay or "NA"
+
+
 def validate_prices(price_log: list[dict],
                     brand_log: list[str],
                     threshold: float = 0.60,
@@ -411,49 +453,82 @@ def validate_prices(price_log: list[dict],
     """
     Majority-vote validation across all Gemini API calls.
 
-    Two-gate filter:
-      1. min_presence  — fuel type must appear in >= min_presence fraction of
-                         ALL API calls (scales with video length; filters one-offs)
-      2. threshold     — of those appearances, the top price must account for
-                         >= threshold fraction (filters inconsistent readings)
+    Normalises fuel grade and payment type before grouping, so entries like
+    "Regular CASH" and fuel_type="Regular" + payment_type="Cash" are merged.
+
+    Two-gate filter per (grade, payment) group:
+      1. min_presence  — must appear in >= min_presence fraction of all API calls
+      2. threshold     — top price must account for >= threshold of appearances
 
     Returns (validated_rows, majority_brand).
     """
-    total_api_calls = len(brand_log)   # one entry per Gemini call
+    total_api_calls = len(brand_log)
 
     # ── Brand majority vote ───────────────────────────────────────────────────
     valid_brands = [b for b in brand_log if b]
     majority_brand = Counter(valid_brands).most_common(1)[0][0] if valid_brands else None
 
-    # ── Per fuel-type price aggregation ──────────────────────────────────────
-    by_fuel: dict[str, list[str]] = defaultdict(list)
+    # ── Aggregate by (grade, payment) ────────────────────────────────────────
+    by_key: dict[tuple, list[str]] = defaultdict(list)
     for entry in price_log:
-        ft = (entry.get("fuel_type") or "").strip()
-        pr = str(entry.get("price") or "").strip()
-        if ft and pr and pr != "nan":
-            by_fuel[ft].append(pr)
+        ft  = (entry.get("fuel_type")    or "").strip()
+        pt  = (entry.get("payment_type") or "").strip()
+        pr  = str(entry.get("price")     or "").strip()
+        if not ft or not pr or pr == "nan":
+            continue
+        grade, pay = _normalise_fuel(ft, pt)
+        by_key[(grade, pay)].append(pr)
 
     validated = []
-    for fuel_type, prices in by_fuel.items():
+    for (grade, pay), prices in by_key.items():
         total_seen = len(prices)
+        presence   = total_seen / total_api_calls if total_api_calls > 0 else 0
 
-        # Gate 1: must appear in enough frames relative to total run length
-        presence = total_seen / total_api_calls if total_api_calls > 0 else 0
         if presence < min_presence:
-            log.debug("  SKIP %-15s — presence %.1f%% < %.0f%% minimum",
-                      fuel_type, presence * 100, min_presence * 100)
+            log.debug("  SKIP %-15s %-8s — presence %.1f%% < %.0f%%",
+                      grade, pay, presence * 100, min_presence * 100)
             continue
 
-        # Gate 2: top price must dominate its own detections
-        top_price, top_count = Counter(prices).most_common(1)[0]
-        agreement = top_count / total_seen
+        top_two    = Counter(prices).most_common(2)
+        top_price, top_count = top_two[0]
+        agreement  = top_count / total_seen
+
+        # ── NA-payment split: sign shows two prices but never labels cash/credit ──
+        # When a grade has no payment label and the top price doesn't achieve
+        # agreement (because two different prices split the votes ~50/50),
+        # treat the two dominant values as Cash (lower) and Credit (higher).
+        # Only trigger when: (a) exactly top-2 together cover ≥70% of the bucket
+        # (genuine two-way split, not scattered noise), and (b) each appeared ≥2×.
+        if pay == "NA" and agreement < threshold and len(top_two) == 2:
+            c1, c2 = top_two[0][1], top_two[1][1]
+            combined_agreement = (c1 + c2) / total_seen
+            if combined_agreement >= 0.70 and c1 >= 2 and c2 >= 2:
+                p1 = float(top_two[0][0])
+                p2 = float(top_two[1][0])
+                cash_val   = f"{min(p1, p2):.3f}"
+                credit_val = f"{max(p1, p2):.3f}"
+                log.debug("  SPLIT %-15s NA → Cash=%s Credit=%s", grade, cash_val, credit_val)
+                for split_pay, split_price in (("Cash", cash_val), ("Credit", credit_val)):
+                    validated.append({
+                        "fuel_type":        grade,
+                        "payment_type":     split_pay,
+                        "validated_price":  split_price,
+                        "occurrence_count": c1 if split_pay == "Cash" else c2,
+                        "total_detections": total_seen,
+                        "total_api_calls":  total_api_calls,
+                        "presence_pct":     round(presence * 100, 1),
+                        "agreement_pct":    round(combined_agreement * 100, 1),
+                    })
+                continue
+
         if agreement < threshold:
-            log.debug("  SKIP %-15s — agreement %.1f%% < %.0f%% threshold",
-                      fuel_type, agreement * 100, threshold * 100)
+            log.debug("  SKIP %-15s %-8s — agreement %.1f%% < %.0f%%",
+                      grade, pay, agreement * 100, threshold * 100)
             continue
 
         validated.append({
-            "fuel_type":        fuel_type,
+            "fuel_type":        grade,
+            "payment_type":     pay,
             "validated_price":  top_price,
             "occurrence_count": top_count,
             "total_detections": total_seen,
@@ -462,11 +537,12 @@ def validate_prices(price_log: list[dict],
             "agreement_pct":    round(agreement * 100, 1),
         })
 
-    # Sort by price value ascending (Regular → Mid → Premium)
-    try:
-        validated.sort(key=lambda r: float(r["validated_price"]))
-    except ValueError:
-        validated.sort(key=lambda r: r["fuel_type"])
+    # Sort: grade order first, then Cash before Credit
+    pay_order = {"Cash": 0, "Credit": 1, "NA": 2}
+    validated.sort(key=lambda r: (
+        _GRADE_ORDER.index(r["fuel_type"]) if r["fuel_type"] in _GRADE_ORDER else 99,
+        pay_order.get(r["payment_type"], 2),
+    ))
 
     return validated, majority_brand
 
@@ -476,13 +552,13 @@ def save_price_csv(validated: list[dict], brand: str | None,
     """Save validated prices to CSV."""
     Path(csv_path).parent.mkdir(parents=True, exist_ok=True)
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        fields = ["fuel_type", "validated_price", "occurrence_count",
-                  "total_detections", "total_api_calls",
+        fields = ["fuel_type", "payment_type", "validated_price",
+                  "occurrence_count", "total_detections", "total_api_calls",
                   "presence_pct", "agreement_pct"]
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         for row in validated:
-            writer.writerow({k: row[k] for k in fields})
+            writer.writerow({k: row.get(k, "NA") for k in fields})
     log.info("CSV saved: %s", csv_path)
 
 
@@ -490,122 +566,124 @@ def save_summary_image(validated: list[dict], brand: str | None,
                        img_path: str, threshold: float,
                        min_presence: float = 0.05) -> None:
     """
-    Generate a clean investor-facing summary card image.
+    Generate a slide-ready cash/credit price table summary card.
 
     Layout:
-      ┌─────────────────────────────────────┐
-      │  GAS PRICE AI  ·  GEMINI 3 FLASH   │  ← header
-      ├─────────────────────────────────────┤
-      │  Station:  EXXON                   │  ← brand
-      ├─────────────────────────────────────┤
-      │  FUEL TYPE     PRICE    CONFIDENCE │  ← column headers
-      │  Regular       $3.459   ████ 94%   │
-      │  Premium       $3.859   ████ 91%   │
-      ├─────────────────────────────────────┤
-      │  Validated at ≥60% agreement · ... │  ← footer
-      └─────────────────────────────────────┘
+      ┌─────────────────────────────────────────┐
+      │  GAS PRICE AI          GEMINI 3 FLASH  │  ← header
+      ├─────────────────────────────────────────┤
+      │  STATION   EXXON                        │  ← brand
+      ├─────────────────────────────────────────┤
+      │  FUEL TYPE        CASH      CREDIT/CARD │  ← column headers
+      │  Regular         $2.169      $2.269     │
+      │  Diesel          $3.649      $3.709     │
+      ├─────────────────────────────────────────┤
+      │  Extracted via Gemini Vision OCR  · ... │  ← footer
+      └─────────────────────────────────────────┘
     """
+    import datetime
+
+    # ── Group validated rows by (grade → {cash, credit}) ─────────────────────
+    by_grade: dict[str, dict] = {}
+    for row in validated:
+        g = row["fuel_type"]
+        if g not in by_grade:
+            by_grade[g] = {"cash": None, "credit": None, "row": row}
+        pay = row.get("payment_type", "NA")
+        if pay == "Cash":
+            by_grade[g]["cash"] = row["validated_price"]
+        elif pay == "Credit":
+            by_grade[g]["credit"] = row["validated_price"]
+        else:
+            # No payment type — fill both if not already set
+            if not by_grade[g]["cash"]:
+                by_grade[g]["cash"] = row["validated_price"]
+            if not by_grade[g]["credit"]:
+                by_grade[g]["credit"] = row["validated_price"]
+
+    ordered_grades = ([g for g in _GRADE_ORDER if g in by_grade] +
+                      [g for g in by_grade if g not in _GRADE_ORDER])
+
     # ── Canvas ────────────────────────────────────────────────────────────────
-    W, H_BASE  = 760, 200
-    ROW_H      = 68
-    H          = H_BASE + len(validated) * ROW_H
-    img        = Image.new("RGB", (W, H), color=(10, 13, 22))
-    draw       = ImageDraw.Draw(img)
+    W        = 820
+    PAD      = 32
+    HDR_H    = 62
+    BRAND_H  = 72
+    SUBHDR_H = 36
+    ROW_H    = 58
+    FOOTER_H = 40
+    H = HDR_H + BRAND_H + SUBHDR_H + len(ordered_grades) * ROW_H + FOOTER_H + PAD
 
-    # ── Fonts ─────────────────────────────────────────────────────────────────
-    f_title   = _load_font(18, bold=True)
-    f_sub     = _load_font(13, bold=False)
-    f_brand   = _load_font(26, bold=True)
-    f_col_hdr = _load_font(12, bold=False)
-    f_fuel    = _load_font(18, bold=False)
-    f_price   = _load_font(26, bold=True)
-    f_pct     = _load_font(15, bold=True)
-    f_footer  = _load_font(12, bold=False)
+    img  = Image.new("RGB", (W, H), (10, 13, 22))
+    draw = ImageDraw.Draw(img)
 
-    PAD = 30
+    f_title   = _load_font(19, bold=True)
+    f_sub     = _load_font(13)
+    f_brand   = _load_font(30, bold=True)
+    f_col_hdr = _load_font(13)
+    f_fuel    = _load_font(18)
+    f_price   = _load_font(24, bold=True)
+    f_footer  = _load_font(12)
 
-    # ── Header bar ────────────────────────────────────────────────────────────
-    HDR_H = 54
+    C_CASH_COL   = (85,  220, 120)
+    C_CREDIT_COL = (85,  180, 255)
+
+    def tw(font, text):
+        try:    return int(font.getlength(text))
+        except: return len(text) * (font.size // 2)
+
+    # ── Header ────────────────────────────────────────────────────────────────
     draw.rectangle([0, 0, W, HDR_H], fill=(10, 75, 48))
-    draw.text((PAD, 16), "GAS PRICE AI", font=f_title, fill=(*C_ACCENT, 255))
+    draw.text((PAD, 20), "GAS PRICE AI", font=f_title, fill=C_ACCENT)
     sub = "POWERED BY GEMINI 3 FLASH"
-    try:
-        sw = f_sub.getlength(sub)
-    except AttributeError:
-        sw = len(sub) * 7
-    draw.text((W - PAD - int(sw), 20), sub, font=f_sub, fill=(*C_DIM,))
-    # Thin accent underline
-    draw.line([(0, HDR_H), (W, HDR_H)], fill=(*C_ACCENT,), width=2)
+    draw.text((W - PAD - tw(f_sub, sub), 24), sub, font=f_sub, fill=C_DIM)
+    draw.line([(0, HDR_H), (W, HDR_H)], fill=C_ACCENT, width=2)
 
-    cursor_y = HDR_H
+    cy = HDR_H
 
-    # ── Brand section ─────────────────────────────────────────────────────────
-    BRAND_H = 64
-    draw.rectangle([0, cursor_y, W, cursor_y + BRAND_H], fill=(14, 18, 30))
-    draw.text((PAD, cursor_y + 10), "STATION", font=f_col_hdr, fill=(*C_DIM,))
-    draw.text((PAD, cursor_y + 26), brand.upper() if brand else "UNKNOWN",
-              font=f_brand, fill=(*C_BRAND,))
-    cursor_y += BRAND_H
-
-    # Separator
-    draw.line([(PAD, cursor_y), (W - PAD, cursor_y)],
-              fill=(*C_ACCENT, 100), width=1)
-    cursor_y += 1
+    # ── Brand ─────────────────────────────────────────────────────────────────
+    draw.rectangle([0, cy, W, cy + BRAND_H], fill=(14, 18, 30))
+    draw.text((PAD, cy + 8),  "STATION", font=f_col_hdr, fill=C_DIM)
+    draw.text((PAD, cy + 26), (brand or "UNKNOWN").upper(), font=f_brand, fill=C_BRAND)
+    cy += BRAND_H
+    draw.line([(PAD, cy), (W - PAD, cy)], fill=(*C_ACCENT, 100), width=1)
 
     # ── Column headers ────────────────────────────────────────────────────────
-    COL_HDR_H = 28
-    draw.rectangle([0, cursor_y, W, cursor_y + COL_HDR_H], fill=(14, 18, 30))
-    draw.text((PAD,       cursor_y + 8), "FUEL TYPE",  font=f_col_hdr, fill=(*C_DIM,))
-    draw.text((320,       cursor_y + 8), "PRICE",      font=f_col_hdr, fill=(*C_DIM,))
-    draw.text((500,       cursor_y + 8), "AGREEMENT",  font=f_col_hdr, fill=(*C_DIM,))
-    cursor_y += COL_HDR_H
+    COL_FUEL   = PAD
+    COL_CASH   = 370
+    COL_CREDIT = 590
+    draw.rectangle([0, cy, W, cy + SUBHDR_H], fill=(16, 22, 38))
+    draw.text((COL_FUEL,   cy + 10), "FUEL TYPE",     font=f_col_hdr, fill=C_DIM)
+    draw.text((COL_CASH,   cy + 10), "CASH",          font=f_col_hdr, fill=C_CASH_COL)
+    draw.text((COL_CREDIT, cy + 10), "CREDIT / CARD", font=f_col_hdr, fill=C_CREDIT_COL)
+    cy += SUBHDR_H
 
     # ── Price rows ────────────────────────────────────────────────────────────
-    BAR_W_MAX = 180   # max width of the agreement bar
-    for i, row in enumerate(validated):
-        bg = (12, 16, 26) if i % 2 == 0 else (16, 20, 34)
-        draw.rectangle([0, cursor_y, W, cursor_y + ROW_H], fill=bg)
+    for i, grade in enumerate(ordered_grades):
+        d   = by_grade[grade]
+        bg  = (12, 16, 26) if i % 2 == 0 else (16, 20, 34)
+        draw.rectangle([0, cy, W, cy + ROW_H], fill=bg)
+        mid = cy + ROW_H // 2
 
-        mid_y = cursor_y + ROW_H // 2
+        draw.text((COL_FUEL, mid - 11), grade, font=f_fuel, fill=C_WHITE)
 
-        # Fuel type
-        draw.text((PAD, mid_y - 10), row["fuel_type"],
-                  font=f_fuel, fill=(*C_WHITE,))
+        if d["cash"]:
+            draw.text((COL_CASH,   mid - 13), f"${d['cash']}",
+                      font=f_price, fill=C_CASH_COL)
+        if d["credit"]:
+            draw.text((COL_CREDIT, mid - 13), f"${d['credit']}",
+                      font=f_price, fill=C_CREDIT_COL)
 
-        # Price
-        draw.text((320, mid_y - 14), f"${row['validated_price']}",
-                  font=f_price, fill=(*C_PRICE,))
-
-        # Agreement bar + percentage
-        pct     = row["agreement_pct"] / 100.0
-        bar_w   = int(BAR_W_MAX * pct)
-        bar_col = C_CONF_H if pct >= 0.85 else (C_CONF_M if pct >= 0.70 else C_CONF_L)
-        bar_y0  = mid_y - 7
-        bar_y1  = mid_y + 7
-        # Track background
-        draw.rectangle([500, bar_y0, 500 + BAR_W_MAX, bar_y1], fill=(30, 35, 50))
-        # Filled bar
-        draw.rectangle([500, bar_y0, 500 + bar_w, bar_y1], fill=(*bar_col,))
-        # Percentage label
-        draw.text((500 + BAR_W_MAX + 10, mid_y - 9),
-                  f"{row['agreement_pct']}%", font=f_pct, fill=(*bar_col,))
-
-        # Count sub-label
-        draw.text((PAD, mid_y + 12),
-                  f"{row['occurrence_count']} / {row['total_detections']} detections  "
-                  f"({row['presence_pct']}% of frames)",
-                  font=f_col_hdr, fill=(*C_DIM,))
-
-        cursor_y += ROW_H
+        draw.line([(PAD, cy + ROW_H - 1), (W - PAD, cy + ROW_H - 1)],
+                  fill=(30, 38, 60), width=1)
+        cy += ROW_H
 
     # ── Footer ────────────────────────────────────────────────────────────────
-    import datetime
-    draw.line([(PAD, cursor_y), (W - PAD, cursor_y)],
-              fill=(*C_ACCENT, 60), width=1)
-    cursor_y += 4
-    footer = (f"Filters: ≥{int(threshold*100)}% price agreement  &  ≥{int(min_presence*100)}% frame presence  ·  "
-              f"Generated {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
-    draw.text((PAD, cursor_y + 6), footer, font=f_footer, fill=(*C_DIM,))
+    draw.line([(PAD, cy), (W - PAD, cy)], fill=(*C_ACCENT, 60), width=1)
+    cy += 6
+    footer = (f"Filters: ≥{int(threshold*100)}% agreement  ·  ≥{int(min_presence*100)}% presence  ·  "
+              f"Extracted {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    draw.text((PAD, cy + 8), footer, font=f_footer, fill=C_DIM)
 
     Path(img_path).parent.mkdir(parents=True, exist_ok=True)
     img.save(img_path)

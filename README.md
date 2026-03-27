@@ -114,6 +114,87 @@ output/pipeline/gas_prices_geo_YYYYMMDD_HHMMSS.csv
 
 ---
 
+## Module Reference
+
+### Module Responsibilities
+
+#### `pipeline_csv.py` — Entry Point
+Runs the full pipeline from the command line. Takes `--input` (image folder) or `--video` (dashcam footage), with optional `--geo-sidecar` for external GPS data and `--min-confidence` to drop low-quality reads. Calls the four pipeline modules in order.
+
+---
+
+#### `src/pipeline/config.py` — Central Configuration
+All tunable parameters live here — edit this file to change behaviour without touching pipeline logic:
+- `GEMINI_MODEL` — which Gemini model to call
+- `OCR_PROMPT` — the system instruction sent to Gemini (see below)
+- `MAX_IMAGE_LONG_SIDE = 1920` — images are resized before sending (reduces API cost and payload size)
+- `BATCH_SIZE = 15` — images per API call
+
+The `OCR_PROMPT` tells Gemini to read the sign literally — no guessing, no inference. Key rules:
+- Prices in `9/10` fraction notation (e.g. `2.99⁹`) must be converted to `2.999`
+- Unknown fields → `NA`, never fabricated
+- Output must be CSV only, no commentary
+
+---
+
+#### `src/pipeline/preprocessor.py` — Image Loading & GPS Extraction
+**`ProcessedImage`** is the core data container: holds the image number, file path, PIL image, and a `GeoPoint` (lat/lon/timestamp).
+
+**`load_images_from_folder()`** scans the folder for supported image types (natural sort order so `2.png` comes before `10.png`), pulls GPS from EXIF metadata (DMS → decimal degrees), and optionally replaces EXIF GPS with a sidecar CSV if one is provided.
+
+**`extract_frames_from_video()`** uses OpenCV to pull 1 frame/second from dashcam footage, saving them as JPEGs for the rest of the pipeline.
+
+---
+
+#### `src/pipeline/extractor.py` — Gemini OCR
+**`extract_prices()`** is the core function:
+1. Splits images into batches of 15
+2. For each batch, estimates total JPEG payload size:
+   - Under 18 MB → sends images **inline** as bytes (`types.Part.from_bytes`)
+   - Over 18 MB → uploads via **Gemini File API** (avoids the 20 MB hard limit)
+3. Calls `client.models.generate_content()` with `thinking_budget=0` (disables chain-of-thought, which gives cleaner structured output) and retries up to 3× on failure
+4. Parses the CSV text response back into a list of dicts
+
+**`_parse_csv_response()`** handles the model sometimes wrapping output in markdown code fences (` ```csv ... ``` `), strips them, then normalizes `Price` to exactly 3 decimal places.
+
+---
+
+#### `src/pipeline/geo_merger.py` — Join Prices with GPS & Export
+**`merge_and_export()`** joins Gemini's extracted price rows back to their source images to attach GPS data.
+
+The tricky part: Gemini's `Image_Number` field can come back in inconsistent formats (`"3"`, `"21.png"`, `"Image 3"`, `"3 | 21.png"`). `_resolve_image()` handles this with a 5-tier fallback:
+1. Direct integer index
+2. Exact filename/stem match
+3. Filename embedded in a longer string (regex extract)
+4. First integer found in any string
+5. Give up and log a warning
+
+Output CSVs are timestamped (e.g. `gas_prices_geo_20260312_181901.csv`) so every run produces a new file without overwriting previous results.
+
+---
+
+### Key Design Decisions
+
+| Decision | Reason |
+|---|---|
+| Gemini multimodal OCR instead of traditional CV | Gas price signs vary wildly in font, layout, and lighting; an LLM handles this more robustly than a fixed detector |
+| `thinking_budget=0` | Structured extraction needs direct output, not reasoning chains |
+| Batch size 15 / inline vs File API split | Balances API latency vs. the 20 MB per-request size cap |
+| Natural sort order for images | Prevents `10.png` from being processed before `2.png` |
+| Sidecar CSV for GPS | Cameras often lack GPS; allows data from an external GPS logger to be attached |
+| Timestamped output | Prevents accidental overwrites across runs |
+
+---
+
+### How to Extend This Code
+
+- **Add a new pipeline stage** (e.g. frame selection, deduplication): create a new module in `src/pipeline/`, import and call it in `pipeline_csv.py`
+- **Change the OCR model or prompt**: edit `config.py` only — `extractor.py` reads from config
+- **Add a new output format** (e.g. GeoJSON, database insert): add a function to `geo_merger.py` alongside `merge_and_export()`
+- **Attach GPS from a different source** (e.g. NMEA log): implement a new loader like `load_geo_sidecar()` in `preprocessor.py` and pass the result as `geo_override`
+
+---
+
 ## Output Schema
 
 | Field | Description |
