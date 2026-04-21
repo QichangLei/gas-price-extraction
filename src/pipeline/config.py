@@ -4,9 +4,14 @@ Edit these values to match your setup.
 """
 
 import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env from project root (two levels up from this file: src/pipeline/ → root)
+load_dotenv(Path(__file__).parents[2] / ".env", override=True)
 
 # ── Gemini API ──────────────────────────────────────────────────────────────
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY_HERE")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_MODEL   = "gemini-3-flash-preview"          # supports multi-image input
 
 # ── Image pre-processing ────────────────────────────────────────────────────
@@ -15,7 +20,7 @@ MAX_IMAGE_LONG_SIDE  = 1920                 # resize if larger (preserves AR)
 JPEG_QUALITY         = 92                   # for resized saves
 
 # ── Video frame extraction (future use) ─────────────────────────────────────
-VIDEO_FPS_EXTRACT    = 1                    # 1 frame per second
+VIDEO_FPS_EXTRACT    = 5                    # frames per second to extract from video
 VIDEO_EXTENSIONS     = {".mp4", ".mov", ".avi", ".mkv"}
 
 # ── Geocoding / geo-tagging ─────────────────────────────────────────────────
@@ -58,6 +63,26 @@ Price
   Must look like a gasoline price. Valid examples: 2.999  3.459  4.109
   If shown as 9/10 fraction → convert to 3 decimals  (e.g. 2.99⁹ → 2.999)
   Ignore unrelated numbers (ads, store prices, street signs).
+
+  DIGIT CAUTION — gas price signs use 7-segment LED displays. These digits
+  have very specific shapes; misreading one digit changes the price by $0.60+.
+  Examine each digit independently before writing the price.
+
+  Critical confusion pairs on LED signs:
+  • 7 vs 1 : THIS IS THE MOST COMMON ERROR.
+              "7" has a HORIZONTAL BAR across the top AND a diagonal/angled
+              stem going down-right. On many US gas signs "7" also has a
+              short middle crossbar (resembles the digit ⌐ or a reverse-L).
+              "1" is a plain narrow vertical stroke with NO top bar.
+              A digit with ANY horizontal stroke at the top is "7", not "1".
+              Example: if you see 3.7XX do NOT write 3.1XX.
+  • 9 vs 0 : "9" has a closed loop on top with a tail descending below;
+              "0" is a plain oval with no tail.
+  • 8 vs 0 : "8" has two stacked loops; "0" has one.
+  • 6 vs 0 : "6" has an open top; "0" is fully closed.
+
+  If a digit is ambiguous, lower the Confidence score (< 80) rather than
+  substituting a different digit.
 
 Gas_Station_Brand
   Only if a logo or brand name is clearly visible. Otherwise → NA

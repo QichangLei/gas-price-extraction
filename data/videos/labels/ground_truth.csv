@@ -1,0 +1,84 @@
+video_file,brand,grade,price,payment
+gas_station_1.mp4,EXXON,Regular,3.259,NA
+gas_station_1.mp4,EXXON,Diesel Efficient,5.199,NA
+IMG_0977.MOV,TA Express,Regular,2.169,Cash
+IMG_0977.MOV,TA Express,Regular,2.269,Credit
+IMG_0977.MOV,TA Express,Diesel,3.649,Cash
+IMG_0977.MOV,TA Express,Diesel,3.709,Credit
+IMG_0979.mov,TA,Diesel,3.709,NA
+night_moving.mp4,Shell,95,2.028,
+night_moving.mp4,Shell,V-Power,2.158,
+night_moving.mp4,Shell,Diesel,2.177,
+night_moving.mp4,Shell,MP5,1.978,
+gen_shell_day_20260331_214902.mp4,Shell,Regular,3.199,Cash
+gen_shell_day_20260331_214902.mp4,Shell,Regular,3.299,Credit
+gen_shell_day_20260331_214902.mp4,Shell,Premium,3.799,Cash
+gen_shell_day_20260331_214902.mp4,Shell,Premium,3.899,Credit
+gen_shell_day_20260331_214902.mp4,Shell,Diesel,4.099,
+gen_shell_day_20260331_224316.mp4,Shell,Regular,3.649,Cash
+gen_shell_day_20260331_224316.mp4,Shell,Regular,3.749,Credit
+gen_shell_day_20260331_224316.mp4,Shell,Mid-Grade,4.049,Cash
+gen_shell_day_20260331_224316.mp4,Shell,Mid-Grade,4.149,Credit
+gen_shell_day_20260331_224316.mp4,Shell,Premium,4.439,Cash
+gen_shell_day_20260331_224316.mp4,Shell,Premium,4.539,Credit
+gen_shell_day_20260331_224316.mp4,Shell,Diesel,4.629,
+gen_shell_day_20260331_225124.mp4,Shell,Regular,3.779,Cash
+gen_shell_day_20260331_225124.mp4,Shell,Regular,3.879,Credit
+gen_shell_day_20260331_225124.mp4,Shell,Mid-Grade,4.109,Cash
+gen_shell_day_20260331_225124.mp4,Shell,Mid-Grade,4.209,Credit
+gen_shell_day_20260331_225124.mp4,Shell,Premium,4.529,Cash
+gen_shell_day_20260331_225124.mp4,Shell,Premium,4.629,Credit
+gen_shell_day_20260331_225124.mp4,Shell,Diesel,4.819,
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Regular,3.899,Cash
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Regular,3.999,Credit
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Mid-Grade,4.269,Cash
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Mid-Grade,4.369,Credit
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Premium,4.549,Cash
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Premium,4.649,Credit
+gen_shell_day_ref_Shell_20260331_235400.mp4,Shell,Diesel,4.529,
+gen_shell_day_ref_Shell_20260401_000328.mp4,Shell,Regular,3.64,
+gen_shell_day_ref_Shell_20260401_000328.mp4,Shell,Diesel,4.74,
+anim_Exxon_20260401_002059.mp4,Exxon,Regular,2.799,NA
+anim_Exxon_20260401_002059.mp4,Exxon,Mid-Grade,3.199,NA
+anim_Exxon_20260401_002059.mp4,Exxon,Premium,3.499,NA
+IMG_1084.mov,Love's,Diesel,5.689,
+IMG_1084.mov,Love's,Unknown,3.459,
+IMG_1084.mov,Love's,Unknown,3.689,
+IMG_1084.mov,Love's,Unknown,5.749,
+IMG_1080.mov,Chevron,Regular,3.899,
+IMG_1080.mov,Chevron,Diesel,4.999,
+safeway_exact_frame_20260407_221057.mp4,SAFEWAY,Regular,3.059,
+safeway_exact_frame_20260407_221057.mp4,SAFEWAY,Diesel,3.059,
+safeway_prepended_20260407_221057.mp4,Safeway,Regular,3.059,
+safeway_prepended_20260407_221057.mp4,Safeway,Diesel,3.059,
+trick_speedway_exact_frame_20260407_211116.mp4,Speedway,Regular,2.699,
+trick_speedway_exact_frame_20260407_211116.mp4,Speedway,Diesel,2.959,
+speedway_occlude_veo_20260407_220220.mp4,Speedway,Regular,2.699,
+speedway_occlude_veo_20260407_220220.mp4,Speedway,Diesel,2.959,
+IMG_1087.mov,Smiley's,Regular,3.399,NA
+IMG_1087.mov,Smiley's,Diesel,4.999,NA
+IMG_1088.mov,Pilot,Diesel,5.69,NA
+IMG_1088.mov,Pilot,NA,3.67,NA
+IMG_1090.mov,Shell,Regular,3.799,NA
+IMG_1090.mov,Shell,Diesel,5.299,NA
+IMG_1091.mov,Sunoco,Regular,3.899,NA
+IMG_1091.mov,Sunoco,Diesel,5.299,NA
+IMG_1092.mov,Shell,Regular,3.799,NA
+IMG_1092.mov,Shell,Diesel,5.299,NA
+IMG_1093.mov,Pilot,Regular,3.899,NA
+IMG_1093.mov,Pilot,Diesel,5.799,NA
+IMG_1094.mov,Shell,Regular,3.999,Cash
+IMG_1094.mov,Shell,Regular,4.099,Credit
+IMG_1097.mov,Smiley's,Regular,3.399,NA
+IMG_1097.mov,Smiley's,Diesel,4.999,NA
+IMG_1098.mov,Love's,Regular,3.45,NA
+IMG_1098.mov,Love's,Diesel,5.74,Credit
+IMG_1098.mov,Love's,Diesel,5.68,Cash
+IMG_0966.MOV,Chevron,Regular,2.389,NA
+IMG_0966.MOV,Chevron,Diesel,2.689,NA
+IMG_0970.MOV,Mr Express,Regular,2.199,NA
+IMG_0970.MOV,Mr Express,Diesel,2.899,NA
+IMG_0976.MOV,TA,Regular,2.16,Cash
+IMG_0976.MOV,TA,Regular,2.26,Credit
+IMG_0976.MOV,TA,Diesel,3.64,Cash
+IMG_0976.MOV,TA,Diesel,3.70,Credit

@@ -187,8 +187,12 @@ def extract_frames_from_video(video_path: str | Path,
     except ImportError:
         raise ImportError("Install opencv-python:  pip install opencv-python")
 
+    import shutil
     video_path    = Path(video_path)
     output_folder = Path(output_folder)
+    # Clear folder so frames from previous runs don't accumulate
+    if output_folder.exists():
+        shutil.rmtree(output_folder)
     output_folder.mkdir(parents=True, exist_ok=True)
 
     cap      = cv2.VideoCapture(str(video_path))

@@ -1,4 +1,0 @@
-fuel_type,validated_price,occurrence_count,total_detections,total_api_calls,presence_pct,agreement_pct
-Regular,3.259,69,78,111,70.3,88.5
-Diesel,5.199,53,62,111,55.9,85.5
-Diesel Efficient,5.199,15,16,111,14.4,93.8
